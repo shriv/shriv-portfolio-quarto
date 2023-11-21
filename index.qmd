@@ -1,12 +1,30 @@
 ---
-title: "Blog"
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
-page-layout: full
-title-block-banner: true
+title: Shrividya Ravi
+comments: False
+format:
+  html:
+    page-layout: full
+about:
+  id: about-shriv
+  template: trestles
+  image: avatar.jpg
+  image-shape: round 
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/shriv
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/shrividya-ravi-7a1586a3/
+    - icon: envelope
+      text: Email
+      href: mailto:ravi.shrividya@gmail.com
 ---
+
+:::{#about-shriv}
+Welcome to my website! 
+
+I am a data scientist working to push the analytics capabilities of public sector work in transport. My current work at the Ministry of Transport involves new modelling paradigms for transport policy (including agent based modelling and bayesian models), comprehensive re-design of legacy workflows to reproducible analytical pipelines (RAP) and building towards agile and collaborative ways of working for public sector analysts. 
+
+You can find out more about [projects](projects.qmd), explore my [articles](articles.qmd), read my [blog](index.qmd), or reach out by [e-mail](mailto:dmitri.schebarchov@gmail.com).
+:::

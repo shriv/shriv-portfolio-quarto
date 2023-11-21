@@ -1,11 +1,20 @@
 [
   {
-    "listing": "/articles.html",
-    "items": []
-  },
-  {
-    "listing": "/index.html",
-    "items": []
+    "listing": "/blog.html",
+    "items": [
+      "/post/maritime-data-enrichment/index.html",
+      "/post/rap-public-sector/index.html",
+      "/post/infrastructure-flows/index.html",
+      "/post/network-issues/index.html",
+      "/post/modelling/index.html",
+      "/post/walkability-4/index.html",
+      "/post/walkability-3/index.html",
+      "/post/walkability-2/index.html",
+      "/post/walkability-1/index.html",
+      "/post/fuel-station-1/index.html",
+      "/post/fuel-station-3/index.html",
+      "/post/fuel-station-2/index.html"
+    ]
   },
   {
     "listing": "/projects.html",
@@ -22,5 +31,9 @@
       "/projects/shipping-delays/index.html",
       "/projects/returns-prediction/index.html"
     ]
+  },
+  {
+    "listing": "/articles.html",
+    "items": []
   }
 ]

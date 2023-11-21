@@ -11,13 +11,13 @@ website:
         href: https://twitter.com/ShrividyaRavi
     left:
       - text: "About"
-        file: about.qmd
+        file: index.qmd
       - text: "Projects"
         file: projects.qmd
       - text: "Articles"
         file: articles.qmd
       - text: "Blog"
-        file: index.qmd
+        file: blog.qmd
 
 format:
   html:

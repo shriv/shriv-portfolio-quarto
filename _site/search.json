@@ -1,17 +1,17 @@
 [
   {
-    "objectID": "articles.html",
-    "href": "articles.html",
-    "title": "Articles",
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
     "section": "",
-    "text": "No matching items"
+    "text": "Enriching independent data with industry-relevant concepts\n\n\nUse case of adding container shipping aspects to AIS data\n\n\n\n\ndata science\n\n\nmaritime\n\n\nshipping\n\n\nais\n\n\nnew zealand\n\n\nnetwork analysis\n\n\n\n\n\n\n\n\n\n\n\nJan 25, 2023\n\n\nShrividya Ravi\n\n\n\n\n\n\n  \n\n\n\n\nRAPping in the public sector\n\n\n\n\n\n\n\ndata science\n\n\nreproducibility\n\n\npublic sector\n\n\npipelines\n\n\n\n\n\n\n\n\n\n\n\nNov 10, 2021\n\n\nShrividya Ravi\n\n\n\n\n\n\n  \n\n\n\n\nInfrastructure Flows\n\n\n\n\n\n\n\ndata science\n\n\nrail\n\n\ntransport\n\n\nnew zealand\n\n\nnetwork analysis\n\n\n\n\n\n\n\n\n\n\n\nApr 18, 2021\n\n\nShrividya Ravi\n\n\n\n\n\n\n  \n\n\n\n\nIdentifying spatial network issues\n\n\n\n\n\n\n\ndata science\n\n\nrail\n\n\ntransport\n\n\nnetwork analysis\n\n\nnew zealand\n\n\n\n\n\n\n\n\n\n\n\nApr 15, 2021\n\n\nShrividya Ravi\n\n\n\n\n\n\n  \n\n\n\n\nModelling - a brief reflection\n\n\n\n\n\n\n\ndata science\n\n\nmodelling\n\n\nstatistics\n\n\nbayesian\n\n\n\n\n\n\n\n\n\n\n\nDec 23, 2020\n\n\nShrividya Ravi\n\n\n\n\n\n\n  \n\n\n\n\nWalking in Wellington - insights from modelling\n\n\nPart 4: Bayesian modelling of walkability\n\n\n\n\ndata science\n\n\nwalkability\n\n\ntransport\n\n\nnew zealand\n\n\nnetwork analysis\n\n\nmodelling\n\n\nstatistics\n\n\nbayesian\n\n\n\n\n\n\n\n\n\n\n\nDec 8, 2020\n\n\nShrividya Ravi\n\n\n\n\n\n\n  \n\n\n\n\nWalking in Wellington - validation and visualisation\n\n\nPart 3: Checking network results with APIs and visualising walkability isochrones\n\n\n\n\ndata science\n\n\nwalkability\n\n\ntransport\n\n\nnew zealand\n\n\nnetwork analysis\n\n\n\n\n\n\n\n\n\n\n\nDec 8, 2020\n\n\nShrividya Ravi\n\n\n\n\n\n\n  \n\n\n\n\nWalking in Wellington - walkability metrics\n\n\nPart 2: Calculating elevation-sensitve walkability\n\n\n\n\ndata science\n\n\nwalkability\n\n\ntransport\n\n\nnew zealand\n\n\nnetwork analysis\n\n\n\n\n\n\n\n\n\n\n\nNov 29, 2020\n\n\nShrividya Ravi\n\n\n\n\n\n\n  \n\n\n\n\nWalking in Wellington\n\n\nPart 1: why analyse walkability?\n\n\n\n\ndata science\n\n\nwalkability\n\n\ntransport\n\n\nnew zealand\n\n\nnetwork analysis\n\n\n\n\n\n\n\n\n\n\n\nNov 29, 2020\n\n\nShrividya Ravi\n\n\n\n\n\n\n  \n\n\n\n\nGeospatial proximity analysis with fuel stations - data\n\n\nPart 1: using OpenStreetMap to get data\n\n\n\n\ndata science\n\n\nurban\n\n\nnew zealand\n\n\nnetwork analysis\n\n\n\n\n\n\n\n\n\n\n\nSep 20, 2018\n\n\nShrividya Ravi\n\n\n\n\n\n\n  \n\n\n\n\nGeospatial proximity analysis with fuel stations - accessibility\n\n\nPart 3: customer accessibility\n\n\n\n\ndata science\n\n\nurban\n\n\nnew zealand\n\n\nnetwork analysis\n\n\n\n\n\n\n\n\n\n\n\nSep 20, 2018\n\n\nShrividya Ravi\n\n\n\n\n\n\n  \n\n\n\n\nGeospatial proximity analysis with fuel stations - networks\n\n\nPart 2: fuel station proximity networks\n\n\n\n\ndata science\n\n\nurban\n\n\nnew zealand\n\n\nnetwork analysis\n\n\n\n\n\n\n\n\n\n\n\nSep 20, 2018\n\n\nShrividya Ravi\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Blog",
+    "title": "Shrividya Ravi",
     "section": "",
-    "text": "No matching items"
+    "text": "GitHub\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Email\n  \n\n  \n  \nWelcome to my website!\nI am a data scientist working to push the analytics capabilities of public sector work in transport. My current work at the Ministry of Transport involves new modelling paradigms for transport policy (including agent based modelling and bayesian models), comprehensive re-design of legacy workflows to reproducible analytical pipelines (RAP) and building towards agile and collaborative ways of working for public sector analysts.\nYou can find out more about projects, explore my articles, read my blog, or reach out by e-mail."
   },
   {
     "objectID": "projects/hierarchical-size-models/index.html",
@@ -581,10 +581,10 @@
     "text": "COVID-19 impacts on economic indicators\n\n\n\ncovid-19\n\n\npandemic\n\n\neconomy\n\n\nindicators\n\n\n\n\n\n\n\nShrividya Ravi\n\n\nJan 25, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nTravel Activity Patterns\n\n\n\ndata science\n\n\ntravel\n\n\ntransport\n\n\nbehaviour analysis\n\n\n\n\n\n\n\nShrividya Ravi\n\n\nJan 25, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMaritime Connectivity\n\n\n\ndata science\n\n\ntransport\n\n\nnetwork analysis\n\n\nmaritime\n\n\nshipping\n\n\nais\n\n\n\n\n\n\n\nShrividya Ravi\n\n\nJan 25, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLong tail behaviours\n\n\n\ndata science\n\n\nmarketing\n\n\nretail\n\n\nbehaviour analysis\n\n\n\n\n\n\n\nShrividya Ravi\n\n\nSep 4, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nModelling the real world with hierarchical models\n\n\n\ndata science\n\n\nretail\n\n\nbayesian\n\n\nmodelling\n\n\nstatistics\n\n\n\n\n\n\n\nShrividya Ravi\n\n\nSep 4, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrom Legacy Code to Pipeline\n\n\n\ndata science\n\n\nreproducibility\n\n\npublic sector\n\n\n\n\n\n\n\nShrividya Ravi\n\n\nJan 25, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLearning customer preference: from size to fit\n\n\n\ndata science\n\n\nretail\n\n\nexperiments\n\n\nbehaviour analysis\n\n\nbayesian\n\n\nmodelling\n\n\nstatistics\n\n\n\n\n\n\n\nShrividya Ravi\n\n\nDec 1, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNatural experiments for online behaviours\n\n\n\ndata science\n\n\nmarketing\n\n\nretail\n\n\nexperiments\n\n\nnetwork analysis\n\n\nbehaviour analysis\n\n\n\n\n\n\n\nShrividya Ravi\n\n\nNov 30, 2020\n\n\n\n\n\n\n\n\n\n\n\n\nShipping Schedules\n\n\n\ndata science\n\n\nshipping\n\n\nmaritime\n\n\ncovid-19\n\n\npandemic\n\n\nais\n\n\n\n\n\n\n\nShrividya Ravi\n\n\nNov 30, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVoyage distributions and shipping Delays\n\n\n\ndata science\n\n\nmaritime\n\n\ncovid-19\n\n\npandemic\n\n\nais\n\n\nshipping\n\n\n\n\n\n\n\nShrividya Ravi\n\n\nNov 30, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPredicting customer behaviour: returns\n\n\n\ndata science\n\n\nmarketing\n\n\nretail\n\n\nbehaviour analysis\n\n\n\n\n\n\n\nShrividya Ravi\n\n\nNov 30, 2020\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Shrividya Ravi",
+    "objectID": "articles.html",
+    "href": "articles.html",
+    "title": "Articles",
     "section": "",
-    "text": "GitHub\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Email\n  \n\n  \n  \nWelcome to my website!\nI am a data scientist working to push the analytics capabilities of public sector work in transport. My current work at the Ministry of Transport involves new modelling paradigms for transport policy (including agent based modelling and bayesian models), comprehensive re-design of legacy workflows to reproducible analytical pipelines (RAP) and building towards agile and collaborative ways of working for public sector analysts.\nYou can find out more about projects, explore my articles, read my blog, or reach out by e-mail."
+    "text": "No matching items"
   }
 ]
