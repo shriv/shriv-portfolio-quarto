@@ -5,20 +5,7 @@
   },
   {
     "listing": "/index.html",
-    "items": [
-      "/posts/maritime-data-enrichment/index.html",
-      "/posts/rap-public-sector/index.html",
-      "/posts/infrastructure-flows/index.html",
-      "/posts/network-issues/index.html",
-      "/posts/modelling/index.html",
-      "/posts/walkability-4/index.html",
-      "/posts/walkability-3/index.html",
-      "/posts/walkability-2/index.html",
-      "/posts/walkability-1/index.html",
-      "/posts/fuel-station-1/index.html",
-      "/posts/fuel-station-3/index.html",
-      "/posts/fuel-station-2/index.html"
-    ]
+    "items": []
   },
   {
     "listing": "/projects.html",

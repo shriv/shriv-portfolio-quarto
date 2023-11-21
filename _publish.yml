@@ -1,4 +1,4 @@
 - source: project
   netlify:
-    - id: "a83d269b-f9ed-4e2b-9084-ea951050e8f0"
-      url: "https://shriv-portfolio.netlify.app"
+    - id: a83d269b-f9ed-4e2b-9084-ea951050e8f0
+      url: 'https://shriv-portfolio.netlify.app'
