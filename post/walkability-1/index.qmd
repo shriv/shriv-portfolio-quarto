@@ -7,10 +7,10 @@ execute:
   echo: false
   message: false
 summary: ""
-author: "Shrividya Ravi"
 date: 2020-11-29
 toc: true
 categories: [data science, walkability, transport, new zealand, network analysis]
+description: "Short description"
 ---
 
 This post introduces a series of walkability analyses for Wellington - with a specific focus on walking to playgrounds. The analyses will allow us to examine the following questions:

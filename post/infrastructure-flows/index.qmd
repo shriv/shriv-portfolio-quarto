@@ -7,10 +7,10 @@ execute:
   echo: false
   message: false
 summary: ""
-author: "Shrividya Ravi"
 date: 2021-04-18
 toc: true
 categories: [data science, rail, transport, new zealand, network analysis]
+description: "Short description"
 ---
 
 

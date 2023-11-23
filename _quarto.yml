@@ -16,8 +16,10 @@ website:
         file: projects.qmd
       - text: "Articles"
         file: articles.qmd
-      - text: "Blog"
+      - text: "Technical blog"
         file: blog.qmd
+      - text: "Presentations"
+        file: talks.qmd
 
 format:
   html:

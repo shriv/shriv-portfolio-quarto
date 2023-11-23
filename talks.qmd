@@ -1,0 +1,20 @@
+---
+listing:
+  contents: talks
+  sort: "date desc"
+  categories: false
+  sort-ui: true
+  date-format: "DD MMM YY"
+  type: table
+  page-size: 999
+  fields:
+    - date
+    - title
+    - event
+  field-display-names:
+      venue: Venue
+page-layout: full
+title-block-banner: false
+---
+
+# Talks and workshops

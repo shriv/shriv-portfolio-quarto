@@ -71,9 +71,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -128,7 +128,11 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./blog.html" rel="" target="">
- <span class="menu-text">Blog</span></a>
+ <span class="menu-text">Technical blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./talks.html" rel="" target="">
+ <span class="menu-text">Presentations</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -184,7 +188,49 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="covid-19,pandemic,economy,indicators" data-listing-date-sort="1674558000000" data-listing-file-modified-sort="1700602337015" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="0" data-categories="data science,marketing,retail,experiments,network analysis,behaviour analysis" data-listing-file-modified-sort="1700725819912" data-listing-reading-time-sort="2">
+<a href="./projects/attribution-experiment/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./projects/attribution-experiment/featured.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Natural experiments for online behaviours
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('data science'); return false;">
+data science
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('marketing'); return false;">
+marketing
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('retail'); return false;">
+retail
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('experiments'); return false;">
+experiments
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('network analysis'); return false;">
+network analysis
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('behaviour analysis'); return false;">
+behaviour analysis
+</div>
+</div>
+<div class="card-text listing-description">
+A short summary. Does this show up on the render?
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="covid-19,pandemic,economy,indicators" data-listing-file-modified-sort="1700725886008" data-listing-reading-time-sort="2">
 <a href="./projects/covid-19-economic/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -209,220 +255,18 @@ indicators
 </div>
 </div>
 <div class="card-text listing-description">
-The COVID-19 pandemic has affected economic activity around the world. However, direct impacts cannot be calculated with a comparison between the last pre-pandemic year and…
+Short description.
 </div>
-<div class="card-attribution card-text-small justify">
+<div class="card-attribution card-text-small start">
 <div class="listing-author">
-Shrividya Ravi
-</div>
-<div class="listing-date">
-Jan 25, 2023
+
 </div>
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="data science,travel,transport,behaviour analysis" data-listing-date-sort="1674558000000" data-listing-file-modified-sort="1700601751410" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<a href="./projects/travel-activity-patterns/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="projects/travel-activity-patterns/three-typologies.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Travel Activity Patterns
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('data science'); return false;">
-data science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('travel'); return false;">
-travel
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('transport'); return false;">
-transport
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('behaviour analysis'); return false;">
-behaviour analysis
-</div>
-</div>
-<div class="card-text listing-description">
-Transport policy that aims to modify travel or activity behaviour must first understand what people do, how, why and with whom. Without it policymakers…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Shrividya Ravi
-</div>
-<div class="listing-date">
-Jan 25, 2023
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="data science,transport,network analysis,maritime,shipping,ais" data-listing-date-sort="1674558000000" data-listing-file-modified-sort="1700601774906" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<a href="./projects/maritime-connectivity/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./projects/maritime-connectivity/featured.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Maritime Connectivity
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('data science'); return false;">
-data science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('transport'); return false;">
-transport
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('network analysis'); return false;">
-network analysis
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('maritime'); return false;">
-maritime
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('shipping'); return false;">
-shipping
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('ais'); return false;">
-ais
-</div>
-</div>
-<div class="card-text listing-description">
-Knowing where ships go in order to connect New Zealand to global trading partners provides a qualitative picture of maritime connectivity. We…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Shrividya Ravi
-</div>
-<div class="listing-date">
-Jan 25, 2023
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="data science,marketing,retail,behaviour analysis" data-listing-date-sort="1662206400000" data-listing-file-modified-sort="1700601683323" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<a href="./projects/long-conversion/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./projects/long-conversion/featured.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Long tail behaviours
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('data science'); return false;">
-data science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('marketing'); return false;">
-marketing
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('retail'); return false;">
-retail
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('behaviour analysis'); return false;">
-behaviour analysis
-</div>
-</div>
-<div class="card-text listing-description">
-Customer analytics is a multidisciplinary field of marketing techniques, causal methods and market research - mostly towards the aim of getting us to open our wallets a…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Shrividya Ravi
-</div>
-<div class="listing-date">
-Sep 4, 2022
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="data science,retail,bayesian,modelling,statistics" data-listing-date-sort="1662206400000" data-listing-file-modified-sort="1700601587675" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<a href="./projects/hierarchical-size-models/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./projects/hierarchical-size-models/featured.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Modelling the real world with hierarchical models
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('data science'); return false;">
-data science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('retail'); return false;">
-retail
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('bayesian'); return false;">
-bayesian
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('modelling'); return false;">
-modelling
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('statistics'); return false;">
-statistics
-</div>
-</div>
-<div class="card-text listing-description">
-A simple model usually assumes no grouping or structure in the data. However, real world processes often have clear hierarchy and structure. For example, Brand A shirts will…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Shrividya Ravi
-</div>
-<div class="listing-date">
-Sep 4, 2022
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="data science,reproducibility,public sector" data-listing-date-sort="1611486000000" data-listing-file-modified-sort="1700602107340" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./projects/legacy-code-to-pipeline/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./projects/legacy-code-to-pipeline/rapping.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-From Legacy Code to Pipeline
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('data science'); return false;">
-data science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('reproducibility'); return false;">
-reproducibility
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('public sector'); return false;">
-public sector
-</div>
-</div>
-<div class="card-text listing-description">
-Legacy code is a burden for any developer. Depending on the state of the code, maintenance and improvements are not necessarily simple. From my experience in the public…<code></code><code></code><code></code>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Shrividya Ravi
-</div>
-<div class="listing-date">
-Jan 25, 2021
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="6" data-categories="data science,retail,experiments,behaviour analysis,bayesian,modelling,statistics" data-listing-date-sort="1606734000000" data-listing-file-modified-sort="1700601543482" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="2" data-categories="data science,retail,experiments,behaviour analysis,bayesian,modelling,statistics" data-listing-file-modified-sort="1700725871313" data-listing-reading-time-sort="2">
 <a href="./projects/bayesian-size-models/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -456,29 +300,60 @@ statistics
 </div>
 </div>
 <div class="card-text listing-description">
-The conundrum of size vs.&nbsp;fit continues to plague online shoppers and in turn, retailers. The iteration of purchase, retention / return and re-purchse is an opportunity for…
+Short description
 </div>
-<div class="card-attribution card-text-small justify">
+<div class="card-attribution card-text-small start">
 <div class="listing-author">
-Shrividya Ravi
-</div>
-<div class="listing-date">
-Dec 1, 2020
+
 </div>
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="data science,marketing,retail,experiments,network analysis,behaviour analysis" data-listing-date-sort="1606647600000" data-listing-file-modified-sort="1700601862762" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<a href="./projects/attribution-experiment/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="3" data-categories="data science,travel,transport,behaviour analysis" data-listing-file-modified-sort="1700725983054" data-listing-reading-time-sort="2">
+<a href="./projects/travel-activity-patterns/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="projects/travel-activity-patterns/three-typologies.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Travel Activity Patterns
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('data science'); return false;">
+data science
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('travel'); return false;">
+travel
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('transport'); return false;">
+transport
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('behaviour analysis'); return false;">
+behaviour analysis
+</div>
+</div>
+<div class="card-text listing-description">
+Short description
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="data science,marketing,retail,behaviour analysis" data-listing-file-modified-sort="1700725921246" data-listing-reading-time-sort="2">
+<a href="./projects/long-conversion/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img src="./projects/attribution-experiment/featured.png" class="thumbnail-image card-img" style="height: 150px;">
+<img src="./projects/long-conversion/featured.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Natural experiments for online behaviours
+Long tail behaviours
 </h5>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('data science'); return false;">
@@ -490,32 +365,65 @@ marketing
 <div class="listing-category" onclick="window.quartoListingCategory('retail'); return false;">
 retail
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('experiments'); return false;">
-experiments
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('network analysis'); return false;">
-network analysis
-</div>
 <div class="listing-category" onclick="window.quartoListingCategory('behaviour analysis'); return false;">
 behaviour analysis
 </div>
 </div>
 <div class="card-text listing-description">
-A common problem for websites and web-based technologies is understanding the impact of changes on user behaviour. The Randomised Control Trial (RCT), also referred to as…
+Short description
 </div>
-<div class="card-attribution card-text-small justify">
+<div class="card-attribution card-text-small start">
 <div class="listing-author">
-Shrividya Ravi
-</div>
-<div class="listing-date">
-Nov 30, 2020
+
 </div>
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="8" data-categories="data science,shipping,maritime,covid-19,pandemic,ais" data-listing-date-sort="1606647600000" data-listing-file-modified-sort="1700601718617" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="5" data-categories="data science,transport,network analysis,maritime,shipping,ais" data-listing-file-modified-sort="1700725933462" data-listing-reading-time-sort="2">
+<a href="./projects/maritime-connectivity/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./projects/maritime-connectivity/featured.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Maritime Connectivity
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('data science'); return false;">
+data science
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('transport'); return false;">
+transport
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('network analysis'); return false;">
+network analysis
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('maritime'); return false;">
+maritime
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('shipping'); return false;">
+shipping
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ais'); return false;">
+ais
+</div>
+</div>
+<div class="card-text listing-description">
+Short description
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="6" data-categories="data science,shipping,maritime,covid-19,pandemic,ais" data-listing-file-modified-sort="1700725970820" data-listing-reading-time-sort="2">
 <a href="./projects/shipping-schedules/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="projects/shipping-schedules/shipping-schedules-trans-tasman.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -544,21 +452,18 @@ ais
 </div>
 </div>
 <div class="card-text listing-description">
-One of the challenges in the public sector is…
+Short description
 </div>
-<div class="card-attribution card-text-small justify">
+<div class="card-attribution card-text-small start">
 <div class="listing-author">
-Shrividya Ravi
-</div>
-<div class="listing-date">
-Nov 30, 2020
+
 </div>
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="9" data-categories="data science,maritime,covid-19,pandemic,ais,shipping" data-listing-date-sort="1606647600000" data-listing-file-modified-sort="1700601701843" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="7" data-categories="data science,maritime,covid-19,pandemic,ais,shipping" data-listing-file-modified-sort="1700725960272" data-listing-reading-time-sort="2">
 <a href="./projects/shipping-delays/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -589,21 +494,18 @@ shipping
 </div>
 </div>
 <div class="card-text listing-description">
-Container shipping has been left to the market by New Zealand policymakers - expecting competitive market forces to converge on optimal routes given maritime network…
+Short description
 </div>
-<div class="card-attribution card-text-small justify">
+<div class="card-attribution card-text-small start">
 <div class="listing-author">
-Shrividya Ravi
-</div>
-<div class="listing-date">
-Nov 30, 2020
+
 </div>
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="10" data-categories="data science,marketing,retail,behaviour analysis" data-listing-date-sort="1606647600000" data-listing-file-modified-sort="1700601676170" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="8" data-categories="data science,marketing,retail,behaviour analysis" data-listing-file-modified-sort="1700725949366" data-listing-reading-time-sort="2">
 <a href="./projects/returns-prediction/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -628,14 +530,83 @@ behaviour analysis
 </div>
 </div>
 <div class="card-text listing-description">
-Returns are an inevitable consequence of spatial and temporal separation of purchase from physical interation with the item. Despite advanced multimedia in presenting item…
+Short description
 </div>
-<div class="card-attribution card-text-small justify">
+<div class="card-attribution card-text-small start">
 <div class="listing-author">
-Shrividya Ravi
+
 </div>
-<div class="listing-date">
-Nov 30, 2020
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="9" data-categories="data science,reproducibility,public sector" data-listing-file-modified-sort="1700725909596" data-listing-reading-time-sort="1">
+<a href="./projects/legacy-code-to-pipeline/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./projects/legacy-code-to-pipeline/rapping.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+From Legacy Code to Pipeline
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('data science'); return false;">
+data science
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('reproducibility'); return false;">
+reproducibility
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('public sector'); return false;">
+public sector
+</div>
+</div>
+<div class="card-text listing-description">
+Short description.
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="10" data-categories="data science,retail,bayesian,modelling,statistics" data-listing-file-modified-sort="1700725897061" data-listing-reading-time-sort="2">
+<a href="./projects/hierarchical-size-models/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./projects/hierarchical-size-models/featured.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Modelling the real world with hierarchical models
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('data science'); return false;">
+data science
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('retail'); return false;">
+retail
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('bayesian'); return false;">
+bayesian
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('modelling'); return false;">
+modelling
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('statistics'); return false;">
+statistics
+</div>
+</div>
+<div class="card-text listing-description">
+Short description
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
 </div>
 </div>
 </div>

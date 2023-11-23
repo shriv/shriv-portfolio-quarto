@@ -6,10 +6,9 @@ execute:
   echo: false
   message: false
 summary: ""
-author: "Shrividya Ravi"
-date: 2020-11-30
 toc: true
 categories: [data science, shipping, maritime, covid-19, pandemic, ais]
+description: "Short description"
 ---
 
 One of the challenges in the public sector is getting high level understanding of operational aspects without requiring commercially sensitive data or extensive negotiations to get consistent data from many commericial providers. 

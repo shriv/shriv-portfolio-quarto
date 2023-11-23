@@ -1,0 +1,9 @@
+---
+title: "A-Z of A/B Testing"
+event: "Data Insights Cambridge"
+date: "07-01-2015"
+---
+
+This talk presents a comprehensive overview of A/B testing discussing both the advantages and the caveats. A series of case studies and toy examples will detail the myriad of analyses possible from rich web events data. Topics covered include inference with hypothesis testing, regression, bootstrapping, Bayesian models and parametric simulations.
+
+<a href="http://www.slideshare.net/shriv29/data-insights-talk" class="btn btn-primary">**Slides**</a> <a href="https://www.youtube.com/watch?v=M0DnzgGQ_KU" class="btn btn-primary">**Video**</a>

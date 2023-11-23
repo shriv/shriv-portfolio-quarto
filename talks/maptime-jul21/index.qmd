@@ -1,0 +1,9 @@
+---
+title: "Walking to the park on your computer - adventures in geospatial network analysis"
+event: "Maptime Wellington"
+date: 2021-07-21
+---
+
+Walkability can be measured in many ways but a simple proxy of local walkability is the distance (and travel time) to a nearby amenity - like the local playground. Using geospatial network analysis, we can \"walk\" to many parks (from anywhere) and learn about how walkable our cities and towns really are.
+
+<a href="https://shriv.github.io/maptime-jul21/index.slides#/" class="btn btn-primary">**Slides**</a> <a href="https://github.com/shriv/maptime-jul21" class="btn btn-primary">**Code**</a>

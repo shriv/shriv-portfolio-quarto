@@ -3,11 +3,10 @@
 
 title: "Walking in Wellington - validation and visualisation"
 subtitle: "Part 3: Checking network results with APIs and visualising walkability isochrones"
-summary: "Walking times are validated with routing APIs. Walkability is visualised as isochrones. "
+description: "Walking times are validated with routing APIs. Walkability is visualised as isochrones. "
 execute:
   echo: false
   message: false
-author: "Shrividya Ravi"
 date: 2020-12-08
 toc: true
 categories:  [data science, walkability, transport, new zealand, network analysis]

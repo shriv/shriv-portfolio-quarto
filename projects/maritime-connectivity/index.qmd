@@ -7,11 +7,10 @@ execute:
   echo: false
   message: false
 summary: ""
-author: "Shrividya Ravi"
-date: 2023-01-25
 toc: true
 categories: [data science, transport, network analysis, maritime, shipping, ais]
 image: "featured.png"
+description: "Short description"
 ---
 Knowing where ships go in order to connect New Zealand to global trading partners provides a qualitative picture of maritime connectivity. We can understand that we are well connected to Australia, Southeastern Asia and Eastern Asia. But how much? Are we better connected via maritime links to some partners than others? 
 

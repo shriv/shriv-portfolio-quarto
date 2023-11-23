@@ -6,11 +6,10 @@ execute:
   echo: false
   message: false
 summary: ""
-author: "Shrividya Ravi"
-date: 2020-11-30
 toc: true
 categories: [data science, marketing, retail, experiments, network analysis, behaviour analysis]
 image: "featured.png"
+description: "A short summary. Does this show up on the render?"
 ---
 
 A common problem for websites and web-based technologies is understanding the impact of changes on user behaviour. The Randomised Control Trial (RCT), also referred to as A/B testing, is the gold standard framework for estimating impact. However, setting up A/B tests can be challenging for all types of changes or for embedded  and third party services. 

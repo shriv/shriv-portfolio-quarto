@@ -7,10 +7,10 @@ execute:
   echo: false
   message: false
 summary: ""
-author: "Shrividya Ravi"
 date: 2021-04-15
 toc: true
 categories: [data science, rail, transport, network analysis, new zealand]
+description: "Short description"
 ---
 
 ## Spatial networks: the challenge

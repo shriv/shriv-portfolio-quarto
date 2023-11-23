@@ -1,0 +1,11 @@
+---
+# Documentation: https://wowchemy.com/docs/managing-content/
+
+title: "An Agent Based Model for New Zealand"
+event: "New Zealand Modelling User Group (NZMUGS) conference"
+date: 2020-09-23
+---
+
+The Ministry of Transport have a core role in understanding how the transport system is working for New Zealand. We care about the distributional impact of transport investments and policies: how do our high level recommendations affect the daily lives of people - from commuters to students to freight companies? The key challenge is that, even within any sensible categorisation, individuals have highly variable travel behaviour and motivations. To capture this heterogeneity, the ministry has begun work on an Agent Based Model (ABM) for New Zealand in a co-development partnership with the international transport consultancy, Arup. The ABM will improve the resolution of policy analysis - to look beyond the average, and better illustrate the complex landscape of benefits and dis-benefits. When model development is complete, we aim to test out policy scenarios and investment decisions against comprehensive social and environmental metrics like emissions, social equity and access.
+
+In this talk, we will outline technical development of the ABM to date. Part of our progress so far is due to our working model as a distributed, co-development team with an external consultancy. We will illustrate some highlights of this approach for an ambitious research project over the standard consumption model.

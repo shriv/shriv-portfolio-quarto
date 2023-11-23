@@ -6,11 +6,10 @@ execute:
   echo: false
   message: false
 summary: ""
-author: "Shrividya Ravi"
-date: 2022-09-04
 toc: true
 categories: [data science, marketing, retail, behaviour analysis]
 image: "featured.png"
+description: "Short description"
 ---
 
 Customer analytics is a multidisciplinary field of marketing techniques, causal methods and market research - mostly towards the aim of getting us to open our wallets a little more. While this aim is ethically ambiguous to some, the technical side is rich and ripe for bringing in statisitcal techniques used extensively in other disciplines for additional information and insight. 

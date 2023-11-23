@@ -6,10 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Shrividya Ravi">
-<meta name="dcterms.date" content="2020-12-23">
+<meta name="dcterms.date" content="2015-07-01">
 
-<title>Shrividya Ravi - Modelling - a brief reflection</title>
+<title>Shrividya Ravi - A-Z of A/B Testing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -62,13 +61,11 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -99,7 +96,11 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../blog.html" rel="" target="">
- <span class="menu-text">Blog</span></a>
+ <span class="menu-text">Technical blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../talks.html" rel="" target="">
+ <span class="menu-text">Presentations</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -124,52 +125,24 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
-  <ul class="collapse">
-  <li><a href="#the-goal-of-statistical-modelling" id="toc-the-goal-of-statistical-modelling" class="nav-link" data-scroll-target="#the-goal-of-statistical-modelling">The goal of statistical modelling</a></li>
-  <li><a href="#models-as-an-approximation-of-reality" id="toc-models-as-an-approximation-of-reality" class="nav-link" data-scroll-target="#models-as-an-approximation-of-reality">Models as an approximation of reality</a></li>
-  <li><a href="#model-with-care" id="toc-model-with-care" class="nav-link" data-scroll-target="#model-with-care">Model with care</a></li>
-  <li><a href="#model-for-a-reason" id="toc-model-for-a-reason" class="nav-link" data-scroll-target="#model-for-a-reason">Model for a reason</a></li>
-  <li><a href="#models-for-decision-making" id="toc-models-for-decision-making" class="nav-link" data-scroll-target="#models-for-decision-making">Models for decision making</a></li>
-  <li><a href="#models-to-support-domain-understanding" id="toc-models-to-support-domain-understanding" class="nav-link" data-scroll-target="#models-to-support-domain-understanding">Models to support domain understanding</a></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Modelling - a brief reflection</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">data science</div>
-    <div class="quarto-category">modelling</div>
-    <div class="quarto-category">statistics</div>
-    <div class="quarto-category">bayesian</div>
-  </div>
-  </div>
+<h1 class="title">A-Z of A/B Testing</h1>
+</div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Shrividya Ravi </p>
-          </div>
-  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">December 23, 2020</p>
+      <p class="date">July 1, 2015</p>
     </div>
   </div>
   
@@ -179,105 +152,10 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>While working on the geospatial analysis of walkability, I realised that modelling requires its own introduction and it’s worth taking a high-level persepective into <em>why</em> modelling is useful. I hope to make the case that approximating reality with models allows us to dredge up some useful insights.</p>
-<p>Applications of this post can be seen in the <a href="https://shriv-portfolio.netlify.app/post/walkability-4/">final post of walkability</a>, where we will look at: - The accessibility characteristics of a suburb - Suburban characteristics don’t fit our model approximations. And how we can update our model to better reflect reality.</p>
-<section id="the-goal-of-statistical-modelling" class="level3">
-<h3 class="anchored" data-anchor-id="the-goal-of-statistical-modelling">The goal of statistical modelling</h3>
-<p>The best reason for trying our hand at statistical modelling comes from the entertaining and brilliant pedagogue: <a href="https://ben-lambert.com/about/">Ben Lambert</a>.</p>
-<blockquote class="blockquote">
-<p>In life, noise obfuscates signal. What we see often appears as an incoherent mess that lacks any appearance of logic.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Statistical inference is the logical framework we can use to trial our beliefs about the noisy world against <em>data</em>. We formalise our beliefs in models of <em>probability</em>.</p>
-</blockquote>
-<p style="font-size: 90%; text-align: right; font-style:italic;">
-</p><ul>
-<li>A Student’s Guide to Bayesian Statistics, Ben Lambert (p 17)</li>
-</ul>
-<p></p>
-<p><br></p>
-<p>In his book, Lambert goes on to elaborate the gains acheived from employing a Bayesian approach to statistical inference. Our analysis into accessibility by suburb doesn’t explicitly benefit from a Bayesian approach but I’ve chosen to use it anayway since I’m now completely avowed to <em>The Bayesian Way</em> (<em>Bayes-do</em>?).</p>
-</section>
-<section id="models-as-an-approximation-of-reality" class="level3">
-<h3 class="anchored" data-anchor-id="models-as-an-approximation-of-reality">Models as an approximation of reality</h3>
-<p>The core component of statistical inference is a <em>statistical model</em> - often shortened to just <em>model</em>. Common models formalise the data generation process by quantifying the relationhip between inputs and outcomes. For example, linear regression models quanitfy the relationship between a set of user-defined inputs and the possible outcomes given those inputs.</p>
-<p>The model we’re using in this post is much simpler: we’re considering the probability space of the outcomes - with a particular interest in summary statistics like the mean, <span class="math inline">\(\mu\)</span>, and standard deviation, <span class="math inline">\(\sigma\)</span>. <a href="https://shriv-portfolio.netlify.app/post/walkability-4/#truncated-normal-model-for-better-fit">As we’ll see</a>, we choose a particular mathematical form to represent the probability space of average (<span class="math inline">\(\mu\)</span>) and heterogeneity (<span class="math inline">\(\sigma\)</span>) of accessibility within a suburb.</p>
-</section>
-<section id="model-with-care" class="level3">
-<h3 class="anchored" data-anchor-id="model-with-care">Model with care</h3>
-<p>It’s worth noting that not all data-driven questions benefit from statistical modelling. Models can be complicated and difficult to explain to others - even technically-oriented peers. In view of this, some data evangelists advocate a simpler analysis process. Kat Greenbrook highlights how the <a href="https://www.linkedin.com/pulse/data-stories-glue-analytics-cycle-kat-greenbrook/">modelling aspect can be left out for many business analytics questions</a>.</p>
-<table class="table">
-<colgroup>
-<col style="width: 34%">
-<col style="width: 36%">
-<col style="width: 28%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Data Science cycle</th>
-<th style="text-align: center;">Data Analysis cycle</th>
-<th style="text-align: center;">“Modelling Silo”</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"><img src="analytics_cycle.png" class="img-fluid"></td>
-<td style="text-align: center;"><img src="analytics_cycle_no_modelling.png" class="img-fluid"></td>
-<td style="text-align: center;"><img src="analytics_cycle_modelling_silo.png" class="img-fluid"></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Actions from model output / insights</td>
-<td style="text-align: center;">Actions directly from exploratory analysis</td>
-<td style="text-align: center;">Pointless modelling. No pertinent question and no actions</td>
-</tr>
-</tbody>
-</table>
-<p style="font-size: 90%; text-align: right; font-style:italic;">
-</p><ul>
-<li>Images © <a href="https://www.linkedin.com/pulse/data-stories-glue-analytics-cycle-kat-greenbrook/">Kat Greenbrook</a></li>
-</ul>
-<p></p>
-<p><br></p>
-<p>Data anlysis alone is powerful; exploratory analyses unearth useful insights that can be followed through with business actions. As people who harness data for a purpose, we must constantly evaluate whether the extra complexity of the model layer is adding significant utility and insight.</p>
-<blockquote class="blockquote">
-<p>Modelling should never be undertaken if there is not a clear use case for the output.</p>
-</blockquote>
-<p style="font-size: 90%; text-align: right; font-style:italic;">
-</p><ul>
-<li><a href="https://www.linkedin.com/pulse/data-stories-glue-analytics-cycle-kat-greenbrook/">Kat Greenbrook</a></li>
-</ul>
-<p></p>
-<p><br></p>
-<p>As someone who has frequently lunged into modelling without a cause, I can attest to the pervasive culture of the ‘Modelling Silo’ in Data Science. This ‘cycle’ is wholly disconnected to pertinent questions and, any useful actionable output.</p>
-</section>
-<section id="model-for-a-reason" class="level3">
-<h3 class="anchored" data-anchor-id="model-for-a-reason">Model for a reason</h3>
-<p>Now that we have been cautioned to think before we model, we can identify how models can help better understand playground accessibility in Wellington.</p>
-<p>In the <a href="https://shriv-portfolio.netlify.app/post/walkability-2/">previous post</a>, we ended with heatmaps of accessibility - defined as total travel time. The heatmaps conveyed a holistic picture of areas with worse accessibility due to the hilly topography. However, we couldn’t pick out any details from the overview. For example, we might care about how our specific neighbourhood compares to another, or our neighbourhood vs.&nbsp;the average for the city.</p>
-<p>Comparisons can be done with single point values alone. But, robust comparisons rely on statistical inference - the most classic being the <a href="https://en.wikipedia.org/wiki/Student%27s_t-test"><em>t-test for comparing two means</em></a>. <a href="https://shriv-portfolio.netlify.app/post/walkability-4/#results-for-mu-and-sigma">In the walkability modelling post</a>, we will see how we can robustly compare suburbs using a <em>Bayesian</em> statistical model.</p>
-</section>
-<section id="models-for-decision-making" class="level3">
-<h3 class="anchored" data-anchor-id="models-for-decision-making">Models for decision making</h3>
-<p>Adding a model for comparing suburbs has further utility - it can be used for explicit or qualitative decision making. Explicit decisions are appropriate in a business context since executives want to <a href="https://www.urbandictionary.com/define.php?term=TLDR">tl;dr</a> the best option. Since this series is more focused on exploration, we’ll be building a qualitative picture guided by metrics and analyses.</p>
-<blockquote class="blockquote">
-<p>Can we summarise the playground accessibility characteristic for a given suburb?</p>
-</blockquote>
-<p>This question can help understand how “family-friendly” a particular suburb is. Young families could compare the suburb accessibility characteristics to help make the decision for a move or, evaluate whether the suburb is right for their lifestyle.</p>
-<p>From this question and potential use, we can desgin the model and outputs for an intuitive comparative analysis. The final model allows for two levels of qualitiative comparison: (1) comparing a single suburb to the city average or, (2) comparing any two suburbs together.</p>
-</section>
-<section id="models-to-support-domain-understanding" class="level3">
-<h3 class="anchored" data-anchor-id="models-to-support-domain-understanding">Models to support domain understanding</h3>
-<p>Since models approximate reality, the difference between the model and reality can also add valuable insight.</p>
-<blockquote class="blockquote">
-<p>Which suburbs don’t follow the approximation set by the model? Can we use our domain knowledge to understand why?</p>
-</blockquote>
-<p>In this scenario, mismatch between the data (‘reality’) and the model can help us understand the nature of suburbs better; and use this understanding to update our model for a better representation of reality.</p>
+<p>This talk presents a comprehensive overview of A/B testing discussing both the advantages and the caveats. A series of case studies and toy examples will detail the myriad of analyses possible from rich web events data. Topics covered include inference with hypothesis testing, regression, bootstrapping, Bayesian models and parametric simulations.</p>
+<p><a href="http://www.slideshare.net/shriv29/data-insights-talk" class="btn btn-primary"><strong>Slides</strong></a> <a href="https://www.youtube.com/watch?v=M0DnzgGQ_KU" class="btn btn-primary"><strong>Video</strong></a></p>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

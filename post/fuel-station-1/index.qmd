@@ -7,10 +7,10 @@ execute:
   echo: false
   message: false
 summary: ""
-author: "Shrividya Ravi"
 date: 2018-09-20
 toc: true
 categories: [data science, urban, new zealand, network analysis]
+description: "Short description"
 ---
 
 Journeys begin with a question. A chance discovery of an [excellent introduction and tutorial on urban modelling by Sir Alan Wilson](https://www.youtube.com/watch?v=Vb0CTAB4Ym4&t=4146s) led me to think about a more general proposition:  

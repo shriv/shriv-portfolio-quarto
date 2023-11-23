@@ -1,0 +1,9 @@
+---
+title: "Walkability in Wellington"
+event: "WOSSAT - Wellington Open Source Show and Tell"
+date: 2019-05-16
+---
+
+This talk presents a methodology to calculate and model walkability to get geospatially relevant insights. The walkability calculation introduced is a novel approach that looks at local walkability and how even neighbourhood walking can be prohibitive due to the topography of Wellington. 
+
+<a href="https://github.com/shriv/accessibility-series/blob/master/presentation/wossat-may-2019/wossat-may-2019.pdf" class="btn btn-primary">**Slides**</a> <a href="https://www.youtube.com/watch?v=CuSqMONJLOQ" class="btn btn-primary">**Video**</a> 

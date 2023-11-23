@@ -6,10 +6,9 @@ execute:
   echo: false
   message: false
 summary: ""
-author: "Shrividya Ravi"
-date: 2023-01-25
 toc: true
 categories: [data science, travel, transport, behaviour analysis]
+description: "Short description"
 ---
 
 Transport policy that aims to modify travel or activity behaviour must first understand what people do, how, why and with whom. Without it policymakers risk introducing misaligned policies to the desired behaviour change or creating asymmetric distributional impact where some groups are considerably more disadvantaged than others. 

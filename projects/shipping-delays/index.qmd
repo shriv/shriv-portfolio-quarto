@@ -6,11 +6,10 @@ execute:
   echo: false
   message: false
 summary: ""
-author: "Shrividya Ravi"
-date: 2020-11-30
 toc: true
 categories: [data science, maritime, covid-19, pandemic, ais, shipping]
 image: "featured.png"
+description: "Short description"
 ---
 
 Container shipping has been left to the market by New Zealand policymakers - expecting competitive market forces to converge on optimal routes given maritime network structure, demand and port capacity / attractiveness. However, a cascading set of labourforce disruptions and stringent COVID-19 policies have resulted in significant delays to container ship voyages since the onset of the COVID-19 pandemic. 

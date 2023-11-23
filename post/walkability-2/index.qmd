@@ -3,11 +3,10 @@
 
 title: "Walking in Wellington - walkability metrics"
 subtitle: "Part 2: Calculating elevation-sensitve walkability"
-summary: "In this post, we explore the impact of hilly terrain on walkability. Specifically, on walkability to playgrounds - an amenity that is designed to be locally accessible on foot. In Wellington, hills increase walking time to playgrounds by 9% on average. This post further shows how walkability can be analysed from two perspectives: (1) accessibility _from_ homes _to_ playgrounds or, (2) catchment areas of playgrounds. Depending on the goal of the analysis, the same underlying dataset can be used to produce either perspective."
+description: "In this post, we explore the impact of hilly terrain on walkability. Specifically, on walkability to playgrounds - an amenity that is designed to be locally accessible on foot. In Wellington, hills increase walking time to playgrounds by 9% on average. This post further shows how walkability can be analysed from two perspectives: (1) accessibility _from_ homes _to_ playgrounds or, (2) catchment areas of playgrounds. Depending on the goal of the analysis, the same underlying dataset can be used to produce either perspective."
 execute:
   echo: false
   message: false
-author: "Shrividya Ravi"
 date: 2020-11-29
 toc: true
 categories:  [data science, walkability, transport, new zealand, network analysis]

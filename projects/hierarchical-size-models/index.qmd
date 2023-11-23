@@ -6,11 +6,10 @@ execute:
   echo: false
   message: false
 summary: ""
-author: "Shrividya Ravi"
-date: 2022-09-04
 toc: true
 categories: [data science, retail, bayesian, modelling, statistics]
 image: "featured.png"
+description: "Short description"
 ---
 
 A simple model usually assumes no grouping or structure in the data. However, real world processes often have clear hierarchy and structure. For example, Brand A shirts will be more similar to Brand B shirts than Brand A trousers. Thus, a natural extension to modelling fit is to incorporate a hierarchical structure allows that modelling of categories that closely emulate reality like garment type, fit type (slim, regular, plus) or brand. Using this underlying structure I was able to build a collective size model for  a garment category and individual models for each brand. 

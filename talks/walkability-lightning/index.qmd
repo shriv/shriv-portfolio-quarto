@@ -1,0 +1,9 @@
+---
+title: "Walkability in Wellington: Lightning talk"
+event: "WOSSAT - Wellington Open Source Show and Tell"
+date: 2019-02-19
+---
+
+This talk presents a lightning introduction to calculating walkability for the topographically challenged city of Wellington, New Zealand. 
+
+<a href="https://www.youtube.com/watch?v=0n87w9ber5I" class="btn btn-primary">**Video**</a> 

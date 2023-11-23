@@ -3,12 +3,10 @@
 
 title: "Walking in Wellington - insights from modelling"
 subtitle: "Part 4: Bayesian modelling of walkability"
-summary: "A statistical model can provide specific insights about accessibility by combining intuition and quantitative results. We see that some suburbs, like Karori, have poor and inconsistent accessibility to playgrounds, while suburbs like Newtown and Te Aro have consistently good accessibility. Sensible spatial filters, from LINZ, can be used to better slice up the spatial data for an updated, and more appropriate, model of walkability.
-"
+description: "A statistical model can provide specific insights about accessibility by combining intuition and quantitative results. We see that some suburbs, like Karori, have poor and inconsistent accessibility to playgrounds, while suburbs like Newtown and Te Aro have consistently good accessibility. Sensible spatial filters, from LINZ, can be used to better slice up the spatial data for an updated, and more appropriate, model of walkability."
 execute:
   echo: false
   message: false
-author: "Shrividya Ravi"
 date: 2020-12-08
 toc: true
 categories:  [data science, walkability, transport, new zealand, network analysis, modelling, statistics, bayesian]
