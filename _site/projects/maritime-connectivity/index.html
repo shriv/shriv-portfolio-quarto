@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Short description">
+<meta name="description" content="Building a container shipping network for New Zealand from AIS data.">
 
 <title>Shrividya Ravi - Maritime Connectivity</title>
 <style>
@@ -146,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    Short description
+    Building a container shipping network for New Zealand from AIS data.
   </div>
 </div>
 
@@ -163,7 +163,7 @@ ul.task-list li input[type="checkbox"] {
 
 <p>Knowing where ships go in order to connect New Zealand to global trading partners provides a qualitative picture of maritime connectivity. We can understand that we are well connected to Australia, Southeastern Asia and Eastern Asia. But how much? Are we better connected via maritime links to some partners than others?</p>
 <p>Network analysis offers one way to answer these questions. Networks are a common technical approach in many domains as they reduce information in a way that can identify otherwise hidden patterns and structures. Instead of looking at the strength of trade connections based on value and quantity of trade goods, we look at the structure of the maritime network that will deliver these goods.</p>
-<p>The <a href="https://shriv-portfolio.netlify.app/post/maritime-data-enrichment/">enriched port visits data</a> that can <a href="https://shriv-portfolio.netlify.app/project/shipping-schedules/">build ship schedules</a> or <a href="https://shriv-portfolio.netlify.app/project/shipping-delays/">understand shipping delays</a> can also be used to find patterns of maritime connectivity.</p>
+<p>This analysis uses <a href="https://shriv-portfolio.netlify.app/articles/maritime-data-enrichment/">enriched port visits data</a> derived from AIS movement trajectories. The same data used to find patterns of maritime connectivity can also be used <a href="https://shriv-portfolio.netlify.app/projects/shipping-schedules/">build ship schedules</a> or <a href="https://shriv-portfolio.netlify.app/projects/shipping-delays/">understand shipping delays</a>.</p>
 <p>Nodes, aggregated to countries for convenience, are connected by ship voyages. Direct connections indicate adjacent ports in the visit sequence while indirect connections are either ports further along the schedule or connected by common ports on different routes.</p>
 <p><img src="ship-movements-networks.png" class="img-fluid"></p>
 <p>The relative strength of adjacent connections vs.&nbsp;connections further away is a handy way to split the network into communities. Like social networks, communities of strongly connected nodes are more likely to share information and cooperate, or in more dire circumstances, fail together.</p>

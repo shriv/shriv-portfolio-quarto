@@ -10,7 +10,7 @@ summary: ""
 date: 2021-04-15
 toc: true
 categories: [data science, rail, transport, network analysis, new zealand]
-description: "Short description"
+description: "Troubleshooting spatial networks in R"
 ---
 
 ## Spatial networks: the challenge

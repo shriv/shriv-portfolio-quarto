@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Voyage distributions and shipping Delays"
+title: "Voyage distributions and shipping delays"
 execute:
   echo: false
   message: false
@@ -9,7 +9,7 @@ summary: ""
 toc: true
 categories: [data science, maritime, covid-19, pandemic, ais, shipping]
 image: "featured.png"
-description: "Short description"
+description: "Analysing container ship voyages and delays from AIS data."
 ---
 
 Container shipping has been left to the market by New Zealand policymakers - expecting competitive market forces to converge on optimal routes given maritime network structure, demand and port capacity / attractiveness. However, a cascading set of labourforce disruptions and stringent COVID-19 policies have resulted in significant delays to container ship voyages since the onset of the COVID-19 pandemic. 
@@ -21,6 +21,10 @@ Given New Zealand's geographical position as well as its wide set of trading par
 We can zoom into the temporal patterns for voyages on the two problematic routes. For Trans-Tasman voyages, delays have no clear pattern. For voyages to Southeastern Asia, voyage durations peaked between April - June 2021 before decreasing again.
 
 ![](voyage-time-series.png)
+
+
+This analysis uses [enriched port visits data](https://shriv-portfolio.netlify.app/articles/maritime-data-enrichment/) derived from AIS movement trajectories. The same data used to [understand shipping delays](https://shriv-portfolio.netlify.app/projects/shipping-delays/) can also be used to [build ship schedules](https://shriv-portfolio.netlify.app/projects/shipping-schedules/) or find [patterns of maritime connectivity](https://shriv-portfolio.netlify.app/projects/maritime-connectivity/).
+
 
 #### Disclaimer
 The contents and figures in this post are not official outputs from the Ministry of Transport. They are research-oriented exploratory analyses intended as demonstrations of approaches and techniques relevant to public sector data science. 

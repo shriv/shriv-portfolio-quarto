@@ -8,7 +8,7 @@ execute:
 summary: ""
 toc: true
 categories: [data science, shipping, maritime, covid-19, pandemic, ais]
-description: "Short description"
+description: "Deriving container ship schedules from AIS data."
 ---
 
 One of the challenges in the public sector is getting high level understanding of operational aspects without requiring commercially sensitive data or extensive negotiations to get consistent data from many commericial providers. 
@@ -24,6 +24,9 @@ For example, we see that around a third of ships that made any Trans-Tasman (`Au
 A completely different pattern exists for ships that have done a `Australia-New Zealand-Southeastern Asia` route. For these ships, around half run regularly on this route route while another quarter run a variant that only drops Australian ports on the voyage. 
 
 ![](shipping-schedules-seasia.png)
+
+
+This analysis uses [enriched port visits data](https://shriv-portfolio.netlify.app/articles/maritime-data-enrichment/) derived from AIS movement trajectories. The same data used to [build ship schedules](https://shriv-portfolio.netlify.app/projects/shipping-schedules/) can also be used toor find [understand shipping delays](https://shriv-portfolio.netlify.app/projects/shipping-delays/) or [patterns of maritime connectivity](https://shriv-portfolio.netlify.app/projects/maritime-connectivity/).
 
 #### Disclaimer
 The contents and figures in this post are not official outputs from the Ministry of Transport. They are research-oriented exploratory analyses intended as demonstrations of approaches and techniques relevant to public sector data science. 

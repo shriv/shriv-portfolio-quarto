@@ -9,7 +9,7 @@ summary: ""
 toc: true
 categories: [covid-19, pandemic, economy, indicators]
 image: "counterfactuals.png"
-description: "Short description."
+description: "Estimating causal impact on container trade due to the COVID-19 pandemic."
 ---
 The COVID-19 pandemic has affected economic activity around the world. However, direct impacts cannot be calculated with a comparison between the last pre-pandemic year and current pandemic years. For indicators that respond quickly to singular, large shocks like a global pandemic, one approach for extracting a causal impact is to subtract the actual values from a projected counterfactual generated from trends prior to the shock. 
 

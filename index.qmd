@@ -26,5 +26,5 @@ Welcome to my website!
 
 I am a data scientist working to push the analytics capabilities of public sector work in transport. My current work at the Ministry of Transport involves new modelling paradigms for transport policy (including agent based modelling, network analysis and bayesian models), comprehensive re-design of legacy workflows to reproducible analytical pipelines (RAP) and building towards agile and collaborative ways of working for public sector analysts. 
 
-You can find out more about [projects](projects.qmd) I've worked on, explore my [articles](articles.qmd), or peruse my [technical blog](blog.qmd) and [presentations](talks.qmd). I also write a blog on learning about cities and urbanism [here](https://shriv.github.io/e-flaneur/). If you'd like to nerd out about geospatial, data science or urbanism, drop me a line by [e-mail](mailto:pentheseleia@gmail.com).
+You can find out more about [projects](projects.qmd) I've worked on, explore my [articles](articles.qmd), or peruse my [technical blog](blog.qmd) and [presentations](talks.qmd). I also write a blog on cities and urbanism [here](https://shriv.github.io/e-flaneur/). If you'd like to nerd out about geospatial, data science or urbanism, drop me a line by [e-mail](mailto:pentheseleia@gmail.com).
 :::

@@ -2,8 +2,7 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "Walking in Wellington - validation and visualisation"
-subtitle: "Part 3: Checking network results with APIs and visualising walkability isochrones"
-description: "Walking times are validated with routing APIs. Walkability is visualised as isochrones. "
+description: "Part 3: Checking network results with APIs and visualising walkability isochrones."
 execute:
   echo: false
   message: false

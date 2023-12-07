@@ -2,7 +2,6 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "Geospatial proximity analysis with fuel stations - data"
-subtitle: "Part 1: using OpenStreetMap to get data"
 execute:
   echo: false
   message: false
@@ -10,7 +9,7 @@ summary: ""
 date: 2018-09-20
 toc: true
 categories: [data science, urban, new zealand, network analysis]
-description: "Short description"
+description: "Part 1: using OpenStreetMap to get data."
 ---
 
 Journeys begin with a question. A chance discovery of an [excellent introduction and tutorial on urban modelling by Sir Alan Wilson](https://www.youtube.com/watch?v=Vb0CTAB4Ym4&t=4146s) led me to think about a more general proposition:  

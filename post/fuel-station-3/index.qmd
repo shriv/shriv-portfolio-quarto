@@ -2,12 +2,11 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "Geospatial proximity analysis with fuel stations - accessibility"
-subtitle: "Part 3: customer accessibility"
 toc: true
 summary: ""
 date: 2018-09-20
 categories: [data science, urban, new zealand, network analysis]
-description: "Short description"
+description: "Part 3: customer accessibility."
 ---
 
 The previous two parts [Part 1](https://shriv.github.io/Fuel-Stations-Analysis-Part-1/) and [Part 2](https://shriv.github.io/Fuel-Stations-Analysis-Part-2/) retrieved open spatial data for plotting onto a map from OpenStreetMap; and abstracted spatial networks to networks for connectivity analyses.

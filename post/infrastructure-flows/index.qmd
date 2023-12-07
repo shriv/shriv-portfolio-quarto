@@ -10,7 +10,7 @@ summary: ""
 date: 2021-04-18
 toc: true
 categories: [data science, rail, transport, new zealand, network analysis]
-description: "Short description"
+description: "Summarising routes as flows on spatial networks in R."
 ---
 
 

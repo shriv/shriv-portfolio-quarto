@@ -2,7 +2,6 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "Walking in Wellington"
-subtitle: "Part 1: why analyse walkability?"
 execute:
   echo: false
   message: false
@@ -10,7 +9,8 @@ summary: ""
 date: 2020-11-29
 toc: true
 categories: [data science, walkability, transport, new zealand, network analysis]
-description: "Short description"
+description: "Part 1: why analyse walkability?"
+
 ---
 
 This post introduces a series of walkability analyses for Wellington - with a specific focus on walking to playgrounds. The analyses will allow us to examine the following questions:
