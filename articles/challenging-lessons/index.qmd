@@ -1,0 +1,29 @@
+---
+title: "Learning from challenging portfolios"
+description: "Lessons from 4 years at the Ministry of Transport"
+execute:
+  echo: false
+  message: false
+summary: ""
+author: "Shrividya Ravi"
+date: 2023-12-27
+toc: true
+image: "image.jpg"
+categories: [data science, transport, new zealand, public sector]
+---
+
+Within three months of starting at the Ministry of Transport (MOT) I was handed over a large portfolio of reporting (from a colleague who was leaving) that was entirely in SAS, Excel and Tableau. To say I was shocked and stressed is an under-statement. I had negligible skills in Excel and no knowledge of SAS. There was one silver lining: no requirement to continue with SAS. In fact, it was the opposite. 
+
+The year I joined marked the start of a concerted move away from proprietary tools like SAS and non-code tools like Excel. I just needed to re-do processes away from the old paradigm to a new, open source one. But, there was little other directive. Working through this challenge has taught me technical skills I was sorely lacking, and perspectives that have expanded my thinking. Cesar Millan's quote **"You don't always get the dog you want, but you get the dog that you need"** works just as well for a dog of a portfolio.  
+
+![](dog-you-need-2.mp4){fig-align="center" width=50%}
+
+After 4 years in the Analytics & Modelling team at MOT, I have switched to a new team. This transition is bittersweet. I'm excited to work on transport simulations, especially around urban challenges, but I leave behind memorable pieces of work with digital traces of my blood, sweat and tears (not to mention lurking bugs). To honour these hard-earned lessons, I'm committing them as a series of short posts. 
+
+I believe these posts have an audience of greater than one (i.e. other than me). Data scientists in the public sector, especially in policy-focused agencies, battle very different problems to private sector and the relevant technical skills are typically not deployment of realtime ML models or building better user experience with LLMs. The useful skills suite, summarised below, is that of an academic - working mostly by themselves or in a small team of domain experts. 
+
+Always write [design documents before coding](../design-documents/index.qmd) with a [data product perspective](../data-product-perspective/index.qmd). Every project needs to have a clear scope and approach that should be vetted (by both technical reviewers and business customers) before the actual work begins. This can save an enormous amount of time and headspace. When working on a data science project good software carpentry will save a lot of headache during review or running code in the future. Key lessons here are to [structure your analysis as a package](../analysis-as-package/index.qmd) and [build analyses as reproducible analytical pipelines](../analysis-as-rap/index.qmd) or set up [reproducible development environments](../reproducible-env/index.qmd). Of course, all these aspects are built on the solid [foundation of open source and version control](../open-source-vcs/index.qmd) and enabled by [writing practical documentation](../practical-docs/index.qmd). 
+
+## Credit
+Photo by <a href="https://unsplash.com/@towfiqu999999?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Towfiqu barbhuiya</a> on <a href="https://unsplash.com/photos/a-chalkboard-with-the-word-possible-written-on-it-Jxi526YIQgA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  

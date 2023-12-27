@@ -2,7 +2,7 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "Enriching independent data with industry-relevant concepts"
-subtitle: "Use case of adding container shipping aspects to AIS data"
+description: "Adding container shipping concepts to AIS data"
 execute:
   echo: false
   message: false

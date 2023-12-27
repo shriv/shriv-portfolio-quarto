@@ -47,6 +47,7 @@
   {
     "listing": "/articles.html",
     "items": [
+      "/articles/challenging-lessons/index.html",
       "/articles/maritime-data-enrichment/index.html",
       "/articles/rap-public-sector/index.html",
       "/articles/modelling/index.html"
