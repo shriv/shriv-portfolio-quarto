@@ -1,0 +1,39 @@
+---
+title: "Analyses as packages"
+description: "File structure and clarity for analyses"
+execute:
+  echo: false
+  message: false
+summary: ""
+author: "Shrividya Ravi"
+date: 2024-02-09
+toc: true
+bibliography: references.bib
+image: mediamodifier-isA8_lAgDjE-unsplash.jpg
+csl: ieee.csl
+categories: [data science, good practice, R, reproducibility, new zealand, public sector]
+---
+
+R emphasises a functional style of *decomposing a big problem into smaller pieces, then solving each piece with a function or combination of functions* [@hadleywickhamFunctionalProgrammingAdvanced]. Functions can be compiled into package for ease of use across multiple projects or shipped to other users. The package structure enables thorough documentation (functions with Roxygen and usage with vignettes) and includes tests that can be run every time a change is pushed. These virtues make packages the right project structure for the three common data science outputs: analyses, tools and applications. In other words, *everything is a package* [@fayOverviewTesting2020]. 
+
+From a more pragmatic perspective the R package structure is consistent enough to be a cookie cutter structure for data analyses [@gontcharovPutYourData2020]. Project structures anchor development and offer a consistent interface for other users. Python has several options for cookie cutter structure due to the wide range of coding styles while the structure of an R package is powerful enough for common outputs like a web app, report or just a basic analysis. 
+
+![Snapshot of files for an EDA project structured as an R packages. [@gontcharovPutYourData2020]](Pasted image 20220810134946.png)
+
+Denis Gontchorov provides an excellent rundown of how the package structure can be used for the most common tasks faced by data professionals: exploratory data analysis (EDA) [@gontcharovPutYourData2020]. Let's summarise the key folders and how they facilitate common tasks: 
+
+- **R** - this folder contains R code for the EDA as functions. 
+- **man** - this folder contains the documentation generated from the `Roxygen` skeleton around the functions in **R**. 
+- **data** - this folder stores the processed data used for analysis. The functions to generate this can be found in **data-raw** 
+- **inst/extdata** - this folder stores raw data. I would not recommend storing raw data in a package unless it is meant to be completely self-contained. Analyses would be better off with an R / shell script extracting data from a centralised location. 
+- **inst/rmd** - this folder stores the output analysis. For quarto documents, this would become `inst/qmd`. 
+- **vignettes** - this folder stores a basic tutorial of the functionality. It's different to the output analysis rendered in **inst/rmd**. 
+- **tests** - this folder tests for important functions in **R**. 
+
+More information on how to work with R packages can be found in the online book on R packages [@wickhamPackages2e2022]. I recommend the chapter, "The Whole Game", for a step-by-step tutorial for creating a basic package. 
+
+The R package structures code in order to [build analyses as reproducible analytical pipelines](../analysis-as-rap/index.qmd). In all my years of working as a data scientist, simple approaches like this have yielded the greatest dividends in productivity and innovation. Reducing the overhead of thinking of project structure leaves headspace for innovative analyses and shipping better quality code. 
+
+## Credit
+Photo by <a href="https://unsplash.com/@mediamodifier?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mediamodifier</a> on <a href="https://unsplash.com/photos/brown-cardboard-box-on-white-table-isA8_lAgDjE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  

@@ -1,0 +1,52 @@
+---
+title: "Build analyses as reproducible analytical pipelines"
+description: "Make it easy to run"
+execute:
+  echo: false
+  message: false
+summary: ""
+author: "Shrividya Ravi"
+date: 2024-02-09
+toc: true
+categories: [data science, good practice, reproducibility, new zealand, public sector]
+---
+
+"Pipelines over people" is a time-saving paradigm in analytics. Any process managed by individuals tends to accrue cumbersome, undocumented manual steps though there are instances where ad-hoc process could be reasonable. The *landscape of data science* (visualised below) summarises processes along the dimension of analytical complexity vs. frequency. Academic processes fall into the top left corner where more time is spent on state-of-the-art algorithms and approaches than being able to ship the analysis to someone else or being able to repeat the analysis in future. The tide has turned in recent years however, with considerable efforts in academia to fight the "reproducibility crisis" by establishing robust and reproducible experimental methods as well as data analysis. 
+
+![Landscape of data science. Adapted from a presentation by Tom Beard.](landscape of data science.excalidraw.png)
+
+Analytics in the public sector, on the other hand, occurs at a regular cadence of simple to complex algorithms. Yet, projects are often handled as delicate artisanal processes rather than pragmatic pipelines. Such processes fall neatly into the paradigm of reproducible data science and can be re-engineered into a reproducible analytical pipeline (RAP). 
+
+RAP is a clever acronym coined by [databods in theUK government](https://analysisfunction.civilservice.gov.uk/support/reproducible-analytical-pipelines/) that emphasises good software carpentry relevant to analysts. While reproducible pipelines are not a substitute for data infrastructure, they are an accessible first step in the journey to better data engineering. Too often analysts get stuck with poor process and the answer is never a moonshot to modern data tools like `dbt` or data lakes.
+
+One RAP approach is a "one command" or "one click" pipeline. Re-engineering a process such that someone else (a team member or even future you) can run the whole pipeline end-to-end with one command or one click just requires an end-to-end reproducibility-focused project design pattern. A Jupyter notebook run within a `conda` environment is a common "one click" pattern for Python users (see [here](https://shriv-portfolio.netlify.app/talks/rap-statsnz/) and [here](https://shriv-portfolio.netlify.app/talks/rap-5m/)). A more flexible pattern is a `make` shortcut that runs Docker applications for "one command". 
+
+The `make` + Docker RAP pattern runs code as applications inside a Docker container while the `make` "one command" strings together a linear or DAG (directed acyclic graph) pipeline. Code can be written in any open source programming language and processes can even contain components written in different languages where each component runs in its own Docker container. For example, several of my ETL processes have an "extract" written in Python and a "transform" written in R while a bash script "loads" data to a shared location. 
+
+The project structure of a `make` + Docker RAP (R project as the base example) needs a minimum of three additional files in the root directory. A Python equivalent would replace the `renv.lock` file with an `environment.yml`, `requirements.txt` or `poetry.lock` depending on the Python environment tool being used. 
+
+- **Makefile** - contains shortcuts for common executions e.g. `make run_etl` which would run a data processing pipeline of Extract, Transform and Load. 
+- **Dockerfile** - contains explicit system requirements to run the code. 
+- **renv.lock** - contains language specific dependencies. 
+
+Depending on the project a small number of additional files can prove useful. 
+
+- **.Rprofile** - contains useful instructions for R. For example, a conditional that instructs `renv` to download binaries from RSPM when the OS is Windows or Linux and to use CRAN for OSX. This allows for fast environment restores where possible. 
+- **.Renviron** - contains environment variables like AWS secret keys, Gitlab tokens to download private packages etc.  
+- **config.yml** - contains modifiable parameters for analysis. 
+
+Running a RAP through a make shortcut can be as easy as `make run_etl`, a common shortcut for many of my projects. The `run_etl` command just executes steps in sequence though `make` can also handle complex DAGs. In this example, `get_ecr_images` first downloads the Docker images from a private container registry while the `run_docker` step runs a Docker container before loading the data to a shared location via a bash script. The `Makefile` contains shortcuts to `build_images` and `push_images_to_ecr`. 
+
+```
+run_etl: get_ecr_images run_docker copy_to_s3
+```
+
+A new analyst (or a future you with a new laptop) only needs Docker and a bash terminal to run the process. In this case, there is no dependency on historical data but in some instances the ETL needs to combine new data with old and the `run_etl` step can also include a data download from a shared location. 
+
+The `make` + Docker combination that can also be used to set up a development environment. For example, connecting to including an IDE for interactive checks and tests prior to running the pipeline. This is often helpful for insights reports where `make` + Docker can just provide a reproducible environment for the report. More on this in an upcoming post on reproducible development environments. 
+
+One of the drawbacks of the `make` + Docker RAP is the locking of potentially too old dependencies within `renv.lock` which takes a snapshot of the local system settings e.g installed version of R and compatible dependencies rather than creating an environment current to the time the project was set up. So far, Docker and the various R package repositories have maintained pretty good backwards compatibility but in case this changes, analysts can safeguard for future reproducibility with images backed up in a container registry. 
+
+To conclude, `make` + Docker is a fantastic paradigm for porting analyses across time and people. For anyone interested in delving into further detail on the topics on reproducible data science (especially with R) check out [Bruno Rodrigues's excellent open book on reproducible analytical pipelines](https://raps-with-r.dev/). 
+
+

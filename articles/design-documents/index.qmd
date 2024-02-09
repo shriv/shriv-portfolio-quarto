@@ -1,0 +1,61 @@
+---
+title: "Design documents before coding"
+description: "Save time and headspace in data science projects"
+execute:
+  echo: false
+  message: false
+summary: ""
+author: "Shrividya Ravi"
+date: 2024-02-09
+toc: true
+image: firmbee-com-gcsNOsPEXfs-unsplash.jpg
+bibliography: references.bib
+csl: "ieee.csl"
+categories: [data science, good practice, new zealand, public sector]
+---
+
+Data analysts write code. Often quite a lot. We are effectively software developers regardless of our job titles. This fact doesn't need to put off any analysts since a developer's job is to solve problems rather than write code [@ublDesignDocsGoogle2020], much the same as a number of other domains that include data analysts, data scientists, scientists etc. This means that good practices across seemingly disparate domains can cross-pollinate because they share the same ethos. I've already written about improving reproducibility, a key practice among scientists, with the suggestion for analysts to [build analyses as reproducible analytical pipelines](../analysis-as-rap/index.qmd). I will now do the same for borrowing design considerations from software development for data analysis.  
+
+For a long time, I considered myself separate to software developers because I didn't equate the analysis work I did to feature design, development and testing. However, the underlying cycle of *design*, *development* and *testing* is fundamental to solving any problem for users via a product. Even if the product is just for ourselves or a single business stakeholder, a [data product perspective](../data-product-perspective/index.qmd) can be very beneficial to data analysts.
+
+Before the development work to [structure data analysis as a package](../analysis-as-package/index.qmd) and [build analyses as reproducible analytical pipelines](../analysis-as-rap/index.qmd) even begin, it is useful to reflect upon the *design*. Every analysis makes assumptions about the data required, chooses a particular methodology and presents the output in a certain way. All these choices are part of the *analysis design*. These design choices are a core part of the actual analysis and must be incorporated into the review process of any product that is delivered to a user. A *design document* facilitates this vital part in a consistent manner. 
+
+Design documents describe implementation strategy and design decisions with robust discussion of trade-offs [@ublDesignDocsGoogle2020]. They start with _why_ and _what_ questions for elaborating context, requirements and constraints [@yanHowWriteDesign2021]. These questions place the analysis in the frame of the request or need which predicates the subsequent decisions around data, method and presentation. 
+
+- Why should we solve this problem? Why now? 
+- What are the success criteria? 
+- What are the requirements and constraints? 
+- What is in-scope vs out-of-scope? 
+- What are our assumptions? 
+
+The core of a design document suggests solutions to the problem before justifying a particular solution [@ublDesignDocsGoogle2020]. This should be reasonably easy to write as there is always an alternative, even if it is trivial. My personal experience of writing about alternatives has challenged the solution I honed in on too quickly. Sometimes, the rationale came down to ease and speed but in others, features from the alternatives improved my preferred solution. 
+
+Describing the preferred solution should cover most of the components of data science methodology: data, techniques, validation and communication [@yanHowWriteDesign2021]. Depending on preference, alternatives can be listed for each component. However, I have found more alternatives exist for techniques than the other components. 
+
+- Data - what data is used for the analysis? 
+- Techniques - what analyses techniques will be used? Models, summary statistics etc.
+- Validation - how will the results be validated?
+- Communication - how will the prepared output be communicated?
+
+In an organisation or data team where projects are pursued based on priority, design documents can be instrumental in proving value before building the data product [@vianaBuiltItOnce]. 
+
+- How much value does this analysis provide? It's often not possible to monetise value for public sector but a reduction in response times to common queries can be presented in monetary terms. 
+- What kind of value? Will the analysis be better than before? Will it do more than previously possible?
+- Who will benefit?
+- Will anyone miss out? i.e. a deprecated feature or the scope restricting certain user needs. 
+
+However, the greatest value is that design documents augment organisational knowledge [@ublDesignDocsGoogle2020]. This is applies as well to a large organisation where similar skills are spread across multiple teams to a small organisation with a mix of experience. 
+
+- Senior developers can provide their input where they see fit allowing their deeper insights and understanding to be captured, disseminated and maintained with a record. 
+- Missing considerations can be managed upfront with more eyes on the approach at the outset. 
+- If the problem is similar to one solved before, experienced developers can suggest it leading to a healthy convergence of approach in the organisation. Equally, if the new approach has significant advantages over the old one, the accepted approach for that problem can evolve organically and with consensus.
+
+Capturing the design considerations and discussion in a document is a boon for future team members who might find themselves needing to work with code that was designed and written by someone long one. The design document is a benevolent "Ghost of Analyst Past" gently informing and guiding the new analyst. 
+
+The threshold of when an analysis is too simple for a design phase can be difficult to set. A simple rubric is to _write a design document for complex and ambiguous problems_ [@ublDesignDocsGoogle2020]. For simpler problems, I have found it sufficient to detail the methodology that will be implemented into the Merge Request (Gitlab equivalent of the Pull Request) description. 
+
+Design documents exemplify the valuable perspective that writing documents is expensive, but cheap [@yanHowWriteDesign2021]. Time and effort is expended in writing and reviewing the document but this effort pays off in the long run. Consensus is set upfront and kinks in approach are ironed out at the outset allowing the project to progress smoothly. 
+
+## Credit
+Photo by <a href="https://unsplash.com/@firmbee?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Firmbee.com</a> on <a href="https://unsplash.com/photos/person-writing-on-white-paper-gcsNOsPEXfs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  

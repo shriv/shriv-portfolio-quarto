@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -47,7 +47,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -56,6 +62,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -94,16 +101,43 @@ ul.task-list li input[type="checkbox"] {
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Shrividya Ravi</span>
     </a>
@@ -115,41 +149,41 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
- <span class="menu-text">About</span></a>
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html" rel="" target="">
- <span class="menu-text">Projects</span></a>
+    <a class="nav-link" href="./projects.html"> 
+<span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./articles.html" rel="" target="" aria-current="page">
- <span class="menu-text">Articles</span></a>
+    <a class="nav-link active" href="./articles.html" aria-current="page"> 
+<span class="menu-text">Articles</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html" rel="" target="">
- <span class="menu-text">Technical blog</span></a>
+    <a class="nav-link" href="./blog.html"> 
+<span class="menu-text">Technical blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./talks.html" rel="" target="">
- <span class="menu-text">Presentations</span></a>
+    <a class="nav-link" href="./talks.html"> 
+<span class="menu-text">Presentations</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/shriv" rel="" target=""><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/shriv"> <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/ShrividyaRavi" rel="" target=""><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://twitter.com/ShrividyaRavi"> <i class="bi bi-twitter" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -162,7 +196,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
     
   
-  <div class="quarto-title-meta">
+  <div class="quarto-title-meta column-page-left">
 
       
     
@@ -175,7 +209,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="ais">ais <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bayesian">bayesian <span class="quarto-category-count">(1)</span></div><div class="category" data-category="data science">data science <span class="quarto-category-count">(4)</span></div><div class="category" data-category="maritime">maritime <span class="quarto-category-count">(1)</span></div><div class="category" data-category="modelling">modelling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="network analysis">network analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="new zealand">new zealand <span class="quarto-category-count">(2)</span></div><div class="category" data-category="pipelines">pipelines <span class="quarto-category-count">(1)</span></div><div class="category" data-category="public sector">public sector <span class="quarto-category-count">(2)</span></div><div class="category" data-category="reproducibility">reproducibility <span class="quarto-category-count">(1)</span></div><div class="category" data-category="shipping">shipping <span class="quarto-category-count">(1)</span></div><div class="category" data-category="statistics">statistics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="transport">transport <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(10)</span></div><div class="category" data-category="R">R <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ais">ais <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bayesian">bayesian <span class="quarto-category-count">(1)</span></div><div class="category" data-category="communication">communication <span class="quarto-category-count">(3)</span></div><div class="category" data-category="data science">data science <span class="quarto-category-count">(10)</span></div><div class="category" data-category="documentation">documentation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="good practice">good practice <span class="quarto-category-count">(4)</span></div><div class="category" data-category="maritime">maritime <span class="quarto-category-count">(1)</span></div><div class="category" data-category="modelling">modelling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="network analysis">network analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="new zealand">new zealand <span class="quarto-category-count">(6)</span></div><div class="category" data-category="pipelines">pipelines <span class="quarto-category-count">(1)</span></div><div class="category" data-category="product">product <span class="quarto-category-count">(2)</span></div><div class="category" data-category="public sector">public sector <span class="quarto-category-count">(8)</span></div><div class="category" data-category="reproducibility">reproducibility <span class="quarto-category-count">(3)</span></div><div class="category" data-category="shipping">shipping <span class="quarto-category-count">(1)</span></div><div class="category" data-category="statistics">statistics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="transport">transport <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -186,21 +220,289 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="data science,transport,new zealand,public sector" data-listing-date-sort="1703588400000" data-listing-file-modified-sort="1703652312410" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="0" data-categories="data science,good practice,reproducibility,new zealand,public sector" data-listing-date-sort="1707390000000" data-listing-file-modified-sort="1707465309802" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="919">
 <div class="thumbnail">
-<p><a href="./articles/challenging-lessons/index.html"> <img src="./articles/challenging-lessons/image.jpg" class="thumbnail-image"> </a></p>
+<p><a href="./articles/analysis-as-rap/index.html" class="no-external"></a></p><a href="./articles/analysis-as-rap/index.html" class="no-external">
+<p class="card-img-top"><img src="articles/analysis-as-rap/landscape of data science.excalidraw.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./articles/analysis-as-rap/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./articles/challenging-lessons/index.html">
 <h3 class="no-anchor listing-title">
-Learning from challenging portfolios
+<a href="./articles/analysis-as-rap/index.html" class="no-external">Build analyses as reproducible analytical pipelines</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./articles/analysis-as-rap/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('data science'); return false;">
+data science
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('good practice'); return false;">
+good practice
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('reproducibility'); return false;">
+reproducibility
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('new zealand'); return false;">
+new zealand
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('public sector'); return false;">
+public sector
+</div>
+</div>
+<div class="listing-description">
+<a href="./articles/analysis-as-rap/index.html" class="no-external">Make it easy to run</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./articles/analysis-as-rap/index.html" class="no-external">
+<div class="listing-date">
+Feb 9, 2024
+</div>
+<div class="listing-author">
+Shrividya Ravi
 </div>
 </a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="data science,good practice,R,reproducibility,new zealand,public sector" data-listing-date-sort="1707390000000" data-listing-file-modified-sort="1707465067810" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="466">
+<div class="thumbnail">
+<p><a href="./articles/analysis-as-package/index.html" class="no-external"></a></p><a href="./articles/analysis-as-package/index.html" class="no-external">
+<p><img src="./articles/analysis-as-package/mediamodifier-isA8_lAgDjE-unsplash.jpg" class="thumbnail-image"></p>
+</a><p><a href="./articles/analysis-as-package/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./articles/analysis-as-package/index.html" class="no-external">Analyses as packages</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./articles/analysis-as-package/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('data science'); return false;">
+data science
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('good practice'); return false;">
+good practice
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
+R
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('reproducibility'); return false;">
+reproducibility
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('new zealand'); return false;">
+new zealand
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('public sector'); return false;">
+public sector
+</div>
+</div>
+<div class="listing-description">
+<a href="./articles/analysis-as-package/index.html" class="no-external">File structure and clarity for analyses</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./articles/analysis-as-package/index.html" class="no-external">
+<div class="listing-date">
+Feb 9, 2024
+</div>
+<div class="listing-author">
+Shrividya Ravi
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="data science,product,communication,public sector" data-listing-date-sort="1707390000000" data-listing-file-modified-sort="1707464655264" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="511">
+<div class="thumbnail">
+<p><a href="./articles/open-source-vcs/index.html" class="no-external"></a></p><a href="./articles/open-source-vcs/index.html" class="no-external">
+<p class="card-img-top"><img src="articles/open-source-vcs/review in data analysis.excalidraw.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./articles/open-source-vcs/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./articles/open-source-vcs/index.html" class="no-external">Open source and version control</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./articles/open-source-vcs/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('data science'); return false;">
+data science
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('product'); return false;">
+product
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('communication'); return false;">
+communication
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('public sector'); return false;">
+public sector
+</div>
+</div>
+<div class="listing-description">
+<a href="./articles/open-source-vcs/index.html" class="no-external">The foundation of analytics</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./articles/open-source-vcs/index.html" class="no-external">
+<div class="listing-date">
+Feb 9, 2024
+</div>
+<div class="listing-author">
+Shrividya Ravi
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="data science,product,communication,public sector" data-listing-date-sort="1707390000000" data-listing-file-modified-sort="1707464687003" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1022">
+<div class="thumbnail">
+<p><a href="./articles/data-product-perspective/index.html" class="no-external"></a></p><a href="./articles/data-product-perspective/index.html" class="no-external">
+<p class="card-img-top"><img src="articles/data-product-perspective/Pasted image 20240119141647.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./articles/data-product-perspective/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./articles/data-product-perspective/index.html" class="no-external">Data product perspective</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./articles/data-product-perspective/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('data science'); return false;">
+data science
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('product'); return false;">
+product
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('communication'); return false;">
+communication
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('public sector'); return false;">
+public sector
+</div>
+</div>
+<div class="listing-description">
+<a href="./articles/data-product-perspective/index.html" class="no-external">Technical analyses tailored to stakeholders</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./articles/data-product-perspective/index.html" class="no-external">
+<div class="listing-date">
+Feb 9, 2024
+</div>
+<div class="listing-author">
+Shrividya Ravi
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="data science,good practice,new zealand,public sector" data-listing-date-sort="1707390000000" data-listing-file-modified-sort="1707464646183" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="916">
+<div class="thumbnail">
+<p><a href="./articles/design-documents/index.html" class="no-external"></a></p><a href="./articles/design-documents/index.html" class="no-external">
+<p><img src="./articles/design-documents/firmbee-com-gcsNOsPEXfs-unsplash.jpg" class="thumbnail-image"></p>
+</a><p><a href="./articles/design-documents/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./articles/design-documents/index.html" class="no-external">Design documents before coding</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./articles/design-documents/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('data science'); return false;">
+data science
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('good practice'); return false;">
+good practice
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('new zealand'); return false;">
+new zealand
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('public sector'); return false;">
+public sector
+</div>
+</div>
+<div class="listing-description">
+<a href="./articles/design-documents/index.html" class="no-external">Save time and headspace in data science projects</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./articles/design-documents/index.html" class="no-external">
+<div class="listing-date">
+Feb 9, 2024
+</div>
+<div class="listing-author">
+Shrividya Ravi
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="data science,good practice,documentation,communication,new zealand,public sector" data-listing-date-sort="1707390000000" data-listing-file-modified-sort="1707464675052" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="623">
+<div class="thumbnail">
+<p><a href="./articles/practical-docs/index.html" class="no-external"></a></p><a href="./articles/practical-docs/index.html" class="no-external">
+<p class="card-img-top"><img src="articles/practical-docs/audience distance.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./articles/practical-docs/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./articles/practical-docs/index.html" class="no-external">Writing practical documentation</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./articles/practical-docs/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('data science'); return false;">
+data science
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('good practice'); return false;">
+good practice
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('documentation'); return false;">
+documentation
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('communication'); return false;">
+communication
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('new zealand'); return false;">
+new zealand
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('public sector'); return false;">
+public sector
+</div>
+</div>
+<div class="listing-description">
+<a href="./articles/practical-docs/index.html" class="no-external">Documentation as communication not drudgery</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./articles/practical-docs/index.html" class="no-external">
+<div class="listing-date">
+Feb 9, 2024
+</div>
+<div class="listing-author">
+Shrividya Ravi
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-categories="data science,transport,new zealand,public sector" data-listing-date-sort="1703588400000" data-listing-file-modified-sort="1707465654182" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="435">
+<div class="thumbnail">
+<p><a href="./articles/challenging-lessons/index.html" class="no-external"></a></p><a href="./articles/challenging-lessons/index.html" class="no-external">
+<p><img src="./articles/challenging-lessons/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./articles/challenging-lessons/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./articles/challenging-lessons/index.html" class="no-external">Learning from challenging portfolios</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./articles/challenging-lessons/index.html" class="no-external"></a>
+</div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('data science'); return false;">
 data science
@@ -215,14 +517,12 @@ new zealand
 public sector
 </div>
 </div>
-<a href="./articles/challenging-lessons/index.html">
 <div class="listing-description">
-<p>Lessons from 4 years at the Ministry of Transport</p>
+<a href="./articles/challenging-lessons/index.html" class="no-external">Lessons from 4 years at the Ministry of Transport</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./articles/challenging-lessons/index.html">
+<a href="./articles/challenging-lessons/index.html" class="no-external">
 <div class="listing-date">
 Dec 27, 2023
 </div>
@@ -232,19 +532,19 @@ Shrividya Ravi
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="data science,maritime,shipping,ais,new zealand,network analysis" data-listing-date-sort="1674558000000" data-listing-file-modified-sort="1703651631858" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
+<div class="quarto-post image-right" data-index="7" data-categories="data science,maritime,shipping,ais,new zealand,network analysis" data-listing-date-sort="1674558000000" data-listing-file-modified-sort="1703651631858" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="873">
 <div class="thumbnail">
-<p><a href="./articles/maritime-data-enrichment/index.html"> <p class="card-img-top"><img src="articles/maritime-data-enrichment/kix-anl.png"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./articles/maritime-data-enrichment/index.html" class="no-external"></a></p><a href="./articles/maritime-data-enrichment/index.html" class="no-external">
+<p class="card-img-top"><img src="articles/maritime-data-enrichment/kix-anl.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./articles/maritime-data-enrichment/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./articles/maritime-data-enrichment/index.html">
 <h3 class="no-anchor listing-title">
-Enriching independent data with industry-relevant concepts
+<a href="./articles/maritime-data-enrichment/index.html" class="no-external">Enriching independent data with industry-relevant concepts</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./articles/maritime-data-enrichment/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('data science'); return false;">
 data science
@@ -265,14 +565,12 @@ new zealand
 network analysis
 </div>
 </div>
-<a href="./articles/maritime-data-enrichment/index.html">
 <div class="listing-description">
-<p>Adding container shipping concepts to AIS data</p>
+<a href="./articles/maritime-data-enrichment/index.html" class="no-external">Adding container shipping concepts to AIS data</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./articles/maritime-data-enrichment/index.html">
+<a href="./articles/maritime-data-enrichment/index.html" class="no-external">
 <div class="listing-date">
 Jan 25, 2023
 </div>
@@ -282,19 +580,19 @@ Shrividya Ravi
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="data science,reproducibility,public sector,pipelines" data-listing-date-sort="1636455600000" data-listing-file-modified-sort="1703651686583" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
+<div class="quarto-post image-right" data-index="8" data-categories="data science,reproducibility,public sector,pipelines" data-listing-date-sort="1636455600000" data-listing-file-modified-sort="1703651686583" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1308">
 <div class="thumbnail">
-<p><a href="./articles/rap-public-sector/index.html"> <img src="./articles/rap-public-sector/rapping.png" class="thumbnail-image"> </a></p>
+<p><a href="./articles/rap-public-sector/index.html" class="no-external"></a></p><a href="./articles/rap-public-sector/index.html" class="no-external">
+<p><img src="./articles/rap-public-sector/rapping.png" class="thumbnail-image"></p>
+</a><p><a href="./articles/rap-public-sector/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./articles/rap-public-sector/index.html">
 <h3 class="no-anchor listing-title">
-RAPping in the public sector
+<a href="./articles/rap-public-sector/index.html" class="no-external">RAPping in the public sector</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./articles/rap-public-sector/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('data science'); return false;">
 data science
@@ -309,14 +607,12 @@ public sector
 pipelines
 </div>
 </div>
-<a href="./articles/rap-public-sector/index.html">
 <div class="listing-description">
-<p>Building reproducible analytical pipelines (RAP) around SAS with Python</p>
+<a href="./articles/rap-public-sector/index.html" class="no-external">Building reproducible analytical pipelines (RAP) around SAS with Python</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./articles/rap-public-sector/index.html">
+<a href="./articles/rap-public-sector/index.html" class="no-external">
 <div class="listing-date">
 Nov 10, 2021
 </div>
@@ -326,19 +622,19 @@ Shrividya Ravi
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="data science,modelling,statistics,bayesian" data-listing-date-sort="1608634800000" data-listing-file-modified-sort="1703651729608" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
+<div class="quarto-post image-right" data-index="9" data-categories="data science,modelling,statistics,bayesian" data-listing-date-sort="1608634800000" data-listing-file-modified-sort="1703651729608" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="913">
 <div class="thumbnail">
-<p><a href="./articles/modelling/index.html"> <p class="card-img-top"><img src="articles/modelling/analytics_cycle.png"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./articles/modelling/index.html" class="no-external"></a></p><a href="./articles/modelling/index.html" class="no-external">
+<p class="card-img-top"><img src="articles/modelling/analytics_cycle.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./articles/modelling/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./articles/modelling/index.html">
 <h3 class="no-anchor listing-title">
-Modelling - a brief reflection
+<a href="./articles/modelling/index.html" class="no-external">Modelling - a brief reflection</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./articles/modelling/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('data science'); return false;">
 data science
@@ -353,14 +649,12 @@ statistics
 bayesian
 </div>
 </div>
-<a href="./articles/modelling/index.html">
 <div class="listing-description">
-<p>Thoughts on why statistical modelling is useful</p>
+<a href="./articles/modelling/index.html" class="no-external">Thoughts on why statistical modelling is useful</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./articles/modelling/index.html">
+<a href="./articles/modelling/index.html" class="no-external">
 <div class="listing-date">
 Dec 23, 2020
 </div>
@@ -454,10 +748,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -467,8 +760,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -481,6 +783,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -524,6 +945,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -549,6 +971,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -609,6 +1057,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 

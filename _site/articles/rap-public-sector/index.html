@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -48,7 +48,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -57,6 +63,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -74,9 +81,9 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Shrividya Ravi</span>
     </a>
@@ -88,41 +95,41 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html" rel="" target="">
- <span class="menu-text">About</span></a>
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../projects.html" rel="" target="">
- <span class="menu-text">Projects</span></a>
+    <a class="nav-link" href="../../projects.html"> 
+<span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../articles.html" rel="" target="">
- <span class="menu-text">Articles</span></a>
+    <a class="nav-link" href="../../articles.html"> 
+<span class="menu-text">Articles</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../blog.html" rel="" target="">
- <span class="menu-text">Technical blog</span></a>
+    <a class="nav-link" href="../../blog.html"> 
+<span class="menu-text">Technical blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../talks.html" rel="" target="">
- <span class="menu-text">Presentations</span></a>
+    <a class="nav-link" href="../../talks.html"> 
+<span class="menu-text">Presentations</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/shriv" rel="" target=""><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/shriv"> <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/ShrividyaRavi" rel="" target=""><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://twitter.com/ShrividyaRavi"> <i class="bi bi-twitter" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -191,15 +198,18 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <section id="the-ubiquity-of-bad-processes" class="level2">
 <h2 class="anchored" data-anchor-id="the-ubiquity-of-bad-processes">The ubiquity of bad processes</h2>
 <p>Public sector, indeed even private sector, analytics are rife with silos and people-driven pipelines. Instead of building processes with minimal manual interference, pipelines are ususally a mash of the metaphorical ductape and frenetic manual steps resulting in blood, sweat and tears for any analyst who subsequently picks up the work.</p>
 <p>Manual processes need to be overseen: to start, pause, stop, make changes, perform checks etc. This overload of analyst headspace can have costly outcomes due to inevitable human error. Fortunately, most of these steps can be automated allowing the analyst to dedicate their skills to using the data and providing business-relevant value.</p>
-<div class="cell">
+<div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
+<p></p><figure class="figure"><p></p>
 <div>
 <pre class="mermaid mermaid-js">graph TD
 data --&gt; a[Put in Excel]
@@ -211,6 +221,7 @@ e --&gt; |Changes needed| b
 e  --&gt; |Changes needed| data
 </pre>
 </div>
+<p></p></figure><p></p>
 </div>
 </div>
 </div>
@@ -230,11 +241,11 @@ e  --&gt; |Changes needed| data
 <li>Bringing in code review practices</li>
 </ul>
 <p>Despite its utility, RAP focuses primarily on converting data from a commonly-managed data store into analytical outputs (reports, tables, models etc). However, in the infrastructure-poor environments of many public sector organisations, data is often inaccessible with no automated process that transforms it from raw data to a form fit for subsequent RAPping. This means the concepts of RAP need to be brought further back into the data analysis process - into the ‘data engineering domain’.</p>
-<div class="cell">
+<div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
+<p></p><figure class="figure"><p></p>
 <div>
-
 <pre class="mermaid mermaid-js">graph LR
 rd[Raw data source] --&gt; lc[Local copy]
 lc --&gt; pr1[Transformation application]
@@ -244,6 +255,7 @@ pd --&gt; tab[Tables]
 pd --&gt; db[Dashboards]
 </pre>
 </div>
+<p></p></figure><p></p>
 </div>
 </div>
 </div>
@@ -251,9 +263,10 @@ pd --&gt; db[Dashboards]
 <section id="rapping-with-legacy-code" class="level2">
 <h2 class="anchored" data-anchor-id="rapping-with-legacy-code">RAPping with legacy code</h2>
 <p>For any analyst who has inherited a pre-existent data processing code base replete with manual management, it’s not trivial to rewrite it with RAP principles. Complicated functionality can be difficult to rewrite, and some data extraction steps are challenging. One example of a hard-to-move legacy code base has the following steps:</p>
-<div class="cell">
+<div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
+<p></p><figure class="figure"><p></p>
 <div>
 <pre class="mermaid mermaid-js">flowchart LR
     
@@ -273,6 +286,7 @@ pd --&gt; db[Dashboards]
 fa[feed A] --&gt;|automated &lt;br&gt; delivery| EXTRACT --&gt; TRANSFORM 
 </pre>
 </div>
+<p></p></figure><p></p>
 </div>
 </div>
 </div>
@@ -287,9 +301,10 @@ fa[feed A] --&gt;|automated &lt;br&gt; delivery| EXTRACT --&gt; TRANSFORM
 </ul>
 <p>Python and its rich ecosystem of packages can be used be used as a glue, or interface between different programs. Packages like <code>exhangelib</code> and <code>saspy</code> can connect to APIs and programs like Outlook and SAS respectively. More on how these packages facilitate automation in the following sections.</p>
 <p>Another aspect of pythonic glue is <code>gluing</code> together a linear pipeline / workflow in a <a href="https://jupyter.org/">Jupyter notebook</a>. Cells in the notebook can be run in any order manually but using the <code>Run All</code> command sets up a linear execution - cells are run in series giving immediate linear dependency.</p>
-<div class="cell">
+<div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
+<p></p><figure class="figure"><p></p>
 <div>
 <pre class="mermaid mermaid-js">graph TD
 f[feed A] --&gt; e[Outlook inbox]
@@ -305,6 +320,7 @@ subgraph Jupyter NOTEBOOK
 end
 </pre>
 </div>
+<p></p></figure><p></p>
 </div>
 </div>
 </div>
@@ -328,9 +344,10 @@ end
 <h3 class="anchored" data-anchor-id="getting-data-with-apis">Getting data with APIs</h3>
 <p>Using email inboxes as a primary data receiver is a common problem since public sector analysts lack the technology infrastructure to transfer data between different organisations. Email ends up being a “solution”. However, using emails for frequent data feeds / frequent processing is not a sustainable process.</p>
 <p>Application programming interfaces (APIs) allows applications to communicate with each other. The Outlook email program has a rich API behind it called Exchange Web Services (EWS). Applications (like our RAP extract data application) can send EWS queries to push or pull data to Outlook objects like emails, contacts and calendars. The <code>Get and save data</code> functionality can now store the raw dataset as well apply any required transformations - like changing the filenames or data formats.</p>
-<div class="cell">
+<div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
+<p></p><figure class="figure"><p></p>
 <div>
 <pre class="mermaid mermaid-js">graph TD
 f[feed A] --&gt; e[Outlook inbox]
@@ -342,6 +359,7 @@ subgraph EXTRACT
 end
 </pre>
 </div>
+<p></p></figure><p></p>
 </div>
 </div>
 </div>
@@ -363,9 +381,10 @@ end
 <li>“Mutable” components are created in Python</li>
 <li>The immutable and mutable are brought together with Python’s f-strings</li>
 </ul>
-<div class="cell">
+<div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
+<p></p><figure class="figure"><p></p>
 <div>
 <pre class="mermaid mermaid-js">graph TD
 sc[SAS Code] --&gt; |yaml| pws
@@ -375,6 +394,7 @@ subgraph TRANSFORM
 end
 </pre>
 </div>
+<p></p></figure><p></p>
 </div>
 </div>
 </div>
@@ -463,10 +483,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -476,8 +495,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -490,6 +518,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -533,6 +680,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -558,6 +706,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -618,6 +792,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 

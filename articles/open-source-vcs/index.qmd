@@ -1,0 +1,30 @@
+---
+title: "Open source and version control"
+description: "The foundation of analytics"
+execute:
+  echo: false
+  message: false
+summary: ""
+author: "Shrividya Ravi"
+date: 2024-02-09
+toc: true
+categories: [data science, product, communication, public sector]
+---
+
+Tracking. Collaboration. Innovation. Transfer. These virtues of software development with open source tools and version control are valued so much that the tools are ubiquitous across most software industries. However, they have not been as prominent in public sector analytics despite data analysts being no different to a developer: solving problems with code. 
+
+Providers like SAS have a historical precedence of working closely with public sector agencies with considerable support. They also inserted themselves at the open end of the HR funnel by subsidising university licences across courses that train future analysts. This cleverly engineered dependence cycle has led to the dominance of proprietary tools. For a long time open source has also been regarded with a suspicious eye, especially by those in influential positions of organisational security. Reasonably so, since the messy, melting pot of open source ecosystems are not as tractable from a security standpoint compared to a product that will be installed on a single machine by IT personnel. 
+
+But the tide is changing. More teams are finding themselves up against the limits of tools like SAS compared to the vast ecosystems in R, Python, Julia etc. Proprietary tools are also harder to set up or deploy on the cloud; an area of increasing investment for many public sector organisations. 
+
+Open source and version control underpin the ethos to [build analyses as reproducible analytical pipelines](../analysis-as-rap/index.qmd). Good practices around reproducibility and improving methodologies are impossible without projects that can be transferred or a space for collaboration. 
+
+A centralised version control system backed up with a service like Github or Gitlab or even self-hosted makes review extremely easy. The reviewer can pull the entire project and add their comments, suggestions and changes making the work more rigorous and robust. A second reviewer would add to the rigour and quality. 
+
+![](review in data analysis.excalidraw.png){width=90%}
+
+Analysts can also collaborate easily with version control either in sequence but ensuring that the original work was still protected or in tandem. In these modes of collaboration, the messy part of working together on the same project are immeasurably facilitated by version control taking care of branching and merging where required. The analysts just need to focus on their work rather than admin
+
+![](analyst collaboration.excalidraw.png){width=80%}
+
+For many analysts, version control and open source are no-brainers. However, I have observed several instances of deep reluctance to set up such a tool in organisations. Sadly, the even greater reluctance is that of the analysts themselves. Too many of us have become ingrained in ways that produce reasonable quality work on our terms. When we have arrived at a sweet spot of tools and approaches, what is the point in spending agonising hours (perhaps even weeks and months) on new tools and processes? The real challenge to our status quo is the fundamental recognition that the work is bigger than us. While we all hold a strong attachment to our "project babies", they will only grow into functional beings with the help of the village i.e. our immediate and wider team nurturing their strengths, fixing their bugs and coaxing better performance. 

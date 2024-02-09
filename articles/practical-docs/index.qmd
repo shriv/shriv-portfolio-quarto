@@ -1,0 +1,46 @@
+---
+title: "Writing practical documentation"
+description: "Documentation as communication not drudgery"
+execute:
+  echo: false
+  message: false
+summary: ""
+author: "Shrividya Ravi"
+date: 2024-02-09
+toc: true
+categories: [data science, good practice, documentation, communication, new zealand, public sector]
+---
+
+"_Documentation is communication_". And communication is all about matching the relevant content to the audience. Jean-Luc Doumont, in his opus [Trees, maps and theorems](https://www.principiae.be/X0100.php), advises writers to understand the audience based on the need for content vs. context.  
+
+Potential audiences fall along some spectrum between specialises and generalists. For technical documentation however, the split is reasonably clear. Specialists want more specificity and jargon for precise understanding while non-specialists more contextual information and non-technical terminology.  
+
+- **specialists** - need detail, technical terms.
+- **non-specialists** - need background, interpretation, non-technical terms.
+
+Doumont's insight is an often-ignored audience need: readers can be close or far (in space or time) from the work. The current technical analyst will be a specialist, primary reader while one who will be onboarded to the project in the future will be specialist, secondary reader. A current manager, on the hand, will be a non-specialist, primary reader. 
+
+- **primary readers** - close to the situation (here and now) and require less context.
+- **secondary readers** - reading far from the situation and require more context.
+
+Technical documentation should cater to all four groups split along the axis of context and content. Once again, Doumont's advice is sharp: cater to all audience types with *fractal documents*. A fractal document follows the same pattern at every scale (document, chapter, section) of a **global component** followed by **details**. 
+
+Global components contextualise, summarise and interpret the main point(s) for the general readers without losing the specialised readers while details anticipate questions from specialised readers. With this clarity in structure readers can directly access the information they need without wading through irrelevant cruft.   
+
+![](audience%20distance.png)
+
+Doumont's advice concerns the "who" and the "how" while the [GUT of documentation](https://documentation.divio.com/) provides a useful high level framework for the "what". This framework classifies different types of documentation based on use. For projects which [build analyses as reproducible analytical pipelines](../analysis-as-rap/), understanding-oriented documentation is the first cab off the ranks as it provides value to widest audience. 
+
+![](gut-quadrant.png)
+
+Understanding-oriented documentation starts with contextual information e.g. why the process exists, how it is useful and valuable to customers, common issues and key stakeholders. This introduction should be understandable by a manager helping them understand the value of the project with details for prioritising and negotiating resource. It's also an easy read for the manager when their clout is needed for dealing with any inter-personal conflict about the work. 
+
+All subsequent chapters are intended for a technical audience, starting with a _technical overview_. The overview is suitable for anyone in the technical team (specialised secondary readers) interested in learning more about the project. This view can contain details about the core algorithm (e.g. a machine learning technique), software design pattern used in the codebase etc. The information is relevant to the project but also general enough to be interesting to other technical analysts who won't directly use the code. Sparing details about running a reporting process can be included here though it's better suited to the README as an easier access point for quick updates. 
+
+For complex projects, additional chapters after the *technical overview* can describe specific technical details or administrative information (e.g. procurement, raising issues etc). This view is meant for the specialised primary reader and can be written as an information-oriented reference e.g. describing the inputs, outputs or any caveats in interpretation or use. 
+
+![](sample-docs.png)
+
+Writing good documentation is a skill most of us neglect. The rewards seem lower than the effort especially when there isn't a clear pattern to follow. The format of a fractal document with clear understanding of readers not only makes writing standardised documentation easier but also technical writing in general. When approaching analyses with a [data product perspective](../data-product-perspective/), easy to read reports are a cornerstone data prouduct for business stakeholders. 
+
+

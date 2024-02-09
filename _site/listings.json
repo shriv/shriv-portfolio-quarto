@@ -1,52 +1,13 @@
 [
   {
-    "listing": "/blog.html",
-    "items": [
-      "/post/infrastructure-flows/index.html",
-      "/post/network-issues/index.html",
-      "/post/walkability-4/index.html",
-      "/post/walkability-3/index.html",
-      "/post/walkability-2/index.html",
-      "/post/walkability-1/index.html",
-      "/post/fuel-station-1/index.html",
-      "/post/fuel-station-3/index.html",
-      "/post/fuel-station-2/index.html"
-    ]
-  },
-  {
-    "listing": "/talks.html",
-    "items": [
-      "/talks/activity-viz-tkc-2021/index.html",
-      "/talks/delayed-delivery-tkc-2021/index.html",
-      "/talks/rap-statsnz/index.html",
-      "/talks/maptime-jul21/index.html",
-      "/talks/rap-5m/index.html",
-      "/talks/abm-nz/index.html",
-      "/talks/foss4g-2019/index.html",
-      "/talks/walkability-full/index.html",
-      "/talks/walkability-lightning/index.html",
-      "/talks/ab-testing/index.html"
-    ]
-  },
-  {
-    "listing": "/projects.html",
-    "items": [
-      "/projects/attribution-experiment/index.html",
-      "/projects/covid-19-economic/index.html",
-      "/projects/bayesian-size-models/index.html",
-      "/projects/travel-activity-patterns/index.html",
-      "/projects/long-conversion/index.html",
-      "/projects/maritime-connectivity/index.html",
-      "/projects/shipping-schedules/index.html",
-      "/projects/shipping-delays/index.html",
-      "/projects/returns-prediction/index.html",
-      "/projects/legacy-code-to-pipeline/index.html",
-      "/projects/hierarchical-size-models/index.html"
-    ]
-  },
-  {
     "listing": "/articles.html",
     "items": [
+      "/articles/analysis-as-rap/index.html",
+      "/articles/analysis-as-package/index.html",
+      "/articles/open-source-vcs/index.html",
+      "/articles/data-product-perspective/index.html",
+      "/articles/design-documents/index.html",
+      "/articles/practical-docs/index.html",
       "/articles/challenging-lessons/index.html",
       "/articles/maritime-data-enrichment/index.html",
       "/articles/rap-public-sector/index.html",
