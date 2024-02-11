@@ -44,13 +44,13 @@ In an organisation or data team where projects are pursued based on priority, de
 - Who will benefit?
 - Will anyone miss out? i.e. a deprecated feature or the scope restricting certain user needs. 
 
-However, the greatest value is that design documents augment organisational knowledge [@ublDesignDocsGoogle2020]. This is applies as well to a large organisation where similar skills are spread across multiple teams to a small organisation with a mix of experience. 
+However, the greatest value is that design documents augment organisational knowledge [@ublDesignDocsGoogle2020]. This applies as well to a large organisation where similar skills are spread across multiple teams to a small organisation with a mix of experience. 
 
 - Senior developers can provide their input where they see fit allowing their deeper insights and understanding to be captured, disseminated and maintained with a record. 
 - Missing considerations can be managed upfront with more eyes on the approach at the outset. 
 - If the problem is similar to one solved before, experienced developers can suggest it leading to a healthy convergence of approach in the organisation. Equally, if the new approach has significant advantages over the old one, the accepted approach for that problem can evolve organically and with consensus.
 
-Capturing the design considerations and discussion in a document is a boon for future team members who might find themselves needing to work with code that was designed and written by someone long one. The design document is a benevolent "Ghost of Analyst Past" gently informing and guiding the new analyst. 
+Capturing the design considerations and discussion in a document is a boon for future team members who might find themselves needing to work with code that was designed and written by someone long gone. The design document is a benevolent "Ghost of Analyst Past" gently informing and guiding the new analyst. 
 
 The threshold of when an analysis is too simple for a design phase can be difficult to set. A simple rubric is to _write a design document for complex and ambiguous problems_ [@ublDesignDocsGoogle2020]. For simpler problems, I have found it sufficient to detail the methodology that will be implemented into the Merge Request (Gitlab equivalent of the Pull Request) description. 
 

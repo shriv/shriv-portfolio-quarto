@@ -14,13 +14,13 @@ csl: ieee.csl
 categories: [data science, good practice, R, reproducibility, new zealand, public sector]
 ---
 
-R emphasises a functional style of *decomposing a big problem into smaller pieces, then solving each piece with a function or combination of functions* [@hadleywickhamFunctionalProgrammingAdvanced]. Functions can be compiled into package for ease of use across multiple projects or shipped to other users. The package structure enables thorough documentation (functions with Roxygen and usage with vignettes) and includes tests that can be run every time a change is pushed. These virtues make packages the right project structure for the three common data science outputs: analyses, tools and applications. In other words, *everything is a package* [@fayOverviewTesting2020]. 
+R emphasises a functional style of *decomposing a big problem into smaller pieces, then solving each piece with a function or combination of functions* [@hadleywickhamFunctionalProgrammingAdvanced]. If a code project is comprised mainly of functions, they can be compiled into a package for ease of use across multiple projects or shipped to other users. The package structure enables thorough documentation (functions with Roxygen and usage with vignettes) and includes tests that can be run every time a change is pushed. These virtues make packages the right project structure for the three common data science outputs: analyses, tools and applications. In other words, *everything is a package* [@fayOverviewTesting2020]. 
 
 From a more pragmatic perspective the R package structure is consistent enough to be a cookie cutter structure for data analyses [@gontcharovPutYourData2020]. Project structures anchor development and offer a consistent interface for other users. Python has several options for cookie cutter structure due to the wide range of coding styles while the structure of an R package is powerful enough for common outputs like a web app, report or just a basic analysis. 
 
 ![Snapshot of files for an EDA project structured as an R packages. [@gontcharovPutYourData2020]](Pasted image 20220810134946.png)
 
-Denis Gontchorov provides an excellent rundown of how the package structure can be used for the most common tasks faced by data professionals: exploratory data analysis (EDA) [@gontcharovPutYourData2020]. Let's summarise the key folders and how they facilitate common tasks: 
+Denis Gontchorov provides an excellent rundown of how the package structure can be used for the most common task faced by data professionals: exploratory data analysis (EDA) [@gontcharovPutYourData2020]. Let's summarise the key folders and how they facilitate an EDA: 
 
 - **R** - this folder contains R code for the EDA as functions. 
 - **man** - this folder contains the documentation generated from the `Roxygen` skeleton around the functions in **R**. 
